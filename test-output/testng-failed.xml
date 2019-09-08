@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="basicapi.TC0002_Post_Deletet_API_Testing">
+        <methods>
+          <include name="post_delete_RestApi_on_reqres_server"/>
+        </methods>
+      </class> <!-- basicapi.TC0002_Post_Deletet_API_Testing -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

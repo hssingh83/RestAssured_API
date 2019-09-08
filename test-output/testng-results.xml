@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="8477" started-at="2019-09-08T19:54:06Z" finished-at="2019-09-08T19:54:14Z">
+    <groups>
+    </groups>
+    <test name="Test Get Api Feature" duration-ms="3286" started-at="2019-09-08T19:54:06Z" finished-at="2019-09-08T19:54:09Z">
+      <class name="basicapi.TC0000_Get_API_Testing">
+        <test-method status="PASS" signature="getRestApi()[pri:0, instance:basicapi.TC0000_Get_API_Testing@59474f18]" name="getRestApi" duration-ms="3264" started-at="2019-09-08T19:54:06Z" finished-at="2019-09-08T19:54:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRestApi -->
+      </class> <!-- basicapi.TC0000_Get_API_Testing -->
+    </test> <!-- Test Get Api Feature -->
+    <test name="Test Post Api Feature" duration-ms="1687" started-at="2019-09-08T19:54:09Z" finished-at="2019-09-08T19:54:11Z">
+      <class name="basicapi.TC0001_Post_API_Testing">
+        <test-method status="PASS" signature="postRestApi_on_Google_search_Server()[pri:1, instance:basicapi.TC0001_Post_API_Testing@327514f]" name="postRestApi_on_Google_search_Server" duration-ms="241" started-at="2019-09-08T19:54:09Z" finished-at="2019-09-08T19:54:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postRestApi_on_Google_search_Server -->
+        <test-method status="PASS" signature="postRestApi_on_reqres_server()[pri:2, instance:basicapi.TC0001_Post_API_Testing@327514f]" name="postRestApi_on_reqres_server" duration-ms="1440" started-at="2019-09-08T19:54:09Z" finished-at="2019-09-08T19:54:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postRestApi_on_reqres_server -->
+      </class> <!-- basicapi.TC0001_Post_API_Testing -->
+    </test> <!-- Test Post Api Feature -->
+    <test name="Post_Delete_RestApi Feature" duration-ms="3452" started-at="2019-09-08T19:54:11Z" finished-at="2019-09-08T19:54:14Z">
+      <class name="basicapi.TC0002_Post_Deletet_API_Testing">
+        <test-method status="PASS" signature="post_delete_RestApi_on_Google_search_Server()[pri:1, instance:basicapi.TC0002_Post_Deletet_API_Testing@1573f9fc]" name="post_delete_RestApi_on_Google_search_Server" duration-ms="601" started-at="2019-09-08T19:54:11Z" finished-at="2019-09-08T19:54:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- post_delete_RestApi_on_Google_search_Server -->
+        <test-method status="PASS" signature="post_delete_RestApi_on_reqres_server()[pri:1, instance:basicapi.TC0002_Post_Deletet_API_Testing@1573f9fc]" name="post_delete_RestApi_on_reqres_server" duration-ms="2841" started-at="2019-09-08T19:54:11Z" finished-at="2019-09-08T19:54:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- post_delete_RestApi_on_reqres_server -->
+      </class> <!-- basicapi.TC0002_Post_Deletet_API_Testing -->
+    </test> <!-- Post_Delete_RestApi Feature -->
+  </suite> <!-- Suite -->
+</testng-results>

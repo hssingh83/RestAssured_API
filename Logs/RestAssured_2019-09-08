@@ -1,0 +1,15 @@
+[INFO ] 2019-09-09 00:46:19,082 TC0002_Post_Deletet_API_Testing.post_delete_RestApi_on_Google_search_Server() - Access to URLhttp://216.10.245.166
+[INFO ] 2019-09-09 00:46:21,003 TC0002_Post_Deletet_API_Testing.post_delete_RestApi_on_Google_search_Server() - Verified Status code 200 after posting successfully
+[INFO ] 2019-09-09 00:46:21,003 TC0002_Post_Deletet_API_Testing.post_delete_RestApi_on_Google_search_Server() - Verified Content type of posting is JSON
+[INFO ] 2019-09-09 00:46:21,006 TC0002_Post_Deletet_API_Testing.post_delete_RestApi_on_Google_search_Server() - Verified that following are the response details of post{"status":"OK","place_id":"6e3f36ba83257e0d04995c131e846de8","scope":"APP","reference":"bb6a2f4cad228a704f8424791a6345f2bb6a2f4cad228a704f8424791a6345f2","id":"bb6a2f4cad228a704f8424791a6345f2"}
+[INFO ] 2019-09-09 00:46:21,007 TC0002_Post_Deletet_API_Testing.post_delete_RestApi_on_Google_search_Server() - Verified that following placeID found: 6e3f36ba83257e0d04995c131e846de8
+[INFO ] 2019-09-09 00:46:21,336 TC0002_Post_Deletet_API_Testing.post_delete_RestApi_on_Google_search_Server() - Verified Status code 200 after deleting place ID: 6e3f36ba83257e0d04995c131e846de8
+[INFO ] 2019-09-09 00:46:21,336 TC0002_Post_Deletet_API_Testing.post_delete_RestApi_on_Google_search_Server() - Verified Content type od deleteing is JSON after deleting
+[INFO ] 2019-09-09 00:46:21,336 TC0002_Post_Deletet_API_Testing.post_delete_RestApi_on_Google_search_Server() - Verified that Status is OK after deleting
+[INFO ] 2019-09-09 00:46:21,340 TC0002_Post_Deletet_API_Testing.post_delete_RestApi_on_reqres_server() - Access to URLhttps://reqres.in
+[INFO ] 2019-09-09 00:46:22,858 TC0002_Post_Deletet_API_Testing.post_delete_RestApi_on_reqres_server() - Verified Status code 201 after posting successfully
+[INFO ] 2019-09-09 00:46:22,858 TC0002_Post_Deletet_API_Testing.post_delete_RestApi_on_reqres_server() - Verified Content type of posting is JSON
+[INFO ] 2019-09-09 00:46:22,859 TC0002_Post_Deletet_API_Testing.post_delete_RestApi_on_reqres_server() - Verified that following are the response details of post{"id":"219","createdAt":"2019-09-08T19:16:23.291Z"}
+[INFO ] 2019-09-09 00:46:22,859 TC0002_Post_Deletet_API_Testing.post_delete_RestApi_on_reqres_server() - Verified that following tokenID found: 219
+[INFO ] 2019-09-09 00:46:24,280 TC0002_Post_Deletet_API_Testing.post_delete_RestApi_on_reqres_server() - Verified Status code 201 after deleting place ID: 219
+[INFO ] 2019-09-09 00:46:24,280 TC0002_Post_Deletet_API_Testing.post_delete_RestApi_on_reqres_server() - Verified Content type od deleteing is JSON after deleting

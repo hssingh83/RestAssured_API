@@ -1,0 +1,4 @@
+[INFO ] 2019-09-06 17:37:02,053 post_api.postRestApi() - Access to URLhttp://216.10.245.166
+[INFO ] 2019-09-06 17:37:05,820 post_api.postRestApi() - Verified Status code 200 successfully
+[INFO ] 2019-09-06 17:37:05,836 post_api.postRestApi() - Verified Content typr is JSON
+[INFO ] 2019-09-06 17:37:05,836 post_api.postRestApi() - Verified that following are the response details of post{"status":"OK","place_id":"59608e040585abc13b1e3dd847d60bbd","scope":"APP","reference":"bc1d2ad08a447a005a1e6a521f80680abc1d2ad08a447a005a1e6a521f80680a","id":"bc1d2ad08a447a005a1e6a521f80680a"}

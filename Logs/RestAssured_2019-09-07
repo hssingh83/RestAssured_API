@@ -1,0 +1,6 @@
+[INFO ] 2019-09-07 22:55:18,042 TC0000_Get_API_Testing.getRestApi() - Access to URLhttps://reqres.in
+[INFO ] 2019-09-07 22:56:03,527 TC0000_Get_API_Testing.getRestApi() - Verified Status code 200 successfully
+[INFO ] 2019-09-07 22:56:03,529 TC0000_Get_API_Testing.getRestApi() - Verified Content typr is JSON
+[DEBUG] 2019-09-07 22:56:03,529 TC0000_Get_API_Testing.getRestApi() - Verified body contain Name as 'Michael'
+[DEBUG] 2019-09-07 22:56:03,529 TC0000_Get_API_Testing.getRestApi() - Verified body contain Email as 'george.edwards@reqres.in'
+[DEBUG] 2019-09-07 22:56:03,530 TC0000_Get_API_Testing.getRestApi() - Verified Header as Server equels to 'cloudflare'

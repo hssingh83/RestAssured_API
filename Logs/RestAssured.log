@@ -1,0 +1,29 @@
+[INFO ] 2019-09-09 01:28:05,267 TC0000_Get_API_Testing.getRestApi() - Access to URLhttps://reqres.in
+[INFO ] 2019-09-09 01:28:07,822 TC0000_Get_API_Testing.getRestApi() - Verified Status code 200 successfully
+[INFO ] 2019-09-09 01:28:07,823 TC0000_Get_API_Testing.getRestApi() - Verified Content typr is JSON
+[DEBUG] 2019-09-09 01:28:07,823 TC0000_Get_API_Testing.getRestApi() - Verified body contain Name as 'Michael'
+[DEBUG] 2019-09-09 01:28:07,823 TC0000_Get_API_Testing.getRestApi() - Verified body contain Email as 'george.edwards@reqres.in'
+[DEBUG] 2019-09-09 01:28:07,824 TC0000_Get_API_Testing.getRestApi() - Verified Header as Server equels to 'cloudflare'
+[INFO ] 2019-09-09 01:28:07,860 TC0001_Post_API_Testing.postRestApi_on_Google_search_Server() - Access to URLhttp://216.10.245.166
+[INFO ] 2019-09-09 01:28:08,155 TC0001_Post_API_Testing.postRestApi_on_Google_search_Server() - Verified Status code 200 successfully
+[INFO ] 2019-09-09 01:28:08,155 TC0001_Post_API_Testing.postRestApi_on_Google_search_Server() - Verified Content typr is JSON
+[INFO ] 2019-09-09 01:28:08,156 TC0001_Post_API_Testing.postRestApi_on_Google_search_Server() - Verified that following are the response details of post{"status":"OK","place_id":"e2a18d86581b2cff9a8c002ac81ea52a","scope":"APP","reference":"275ee1e06eb92a18cbfdcdaf9df916a7275ee1e06eb92a18cbfdcdaf9df916a7","id":"275ee1e06eb92a18cbfdcdaf9df916a7"}
+[INFO ] 2019-09-09 01:28:08,159 TC0001_Post_API_Testing.postRestApi_on_reqres_server() - Access to URLhttps://reqres.in/
+[INFO ] 2019-09-09 01:28:09,322 TC0001_Post_API_Testing.postRestApi_on_reqres_server() - Verified Status code 201 successfully
+[INFO ] 2019-09-09 01:28:09,323 TC0001_Post_API_Testing.postRestApi_on_reqres_server() - Verified Content typr is JSON
+[INFO ] 2019-09-09 01:28:09,323 TC0001_Post_API_Testing.postRestApi_on_reqres_server() - Verified that following are the response details of post{"id":"53","createdAt":"2019-09-08T19:58:09.820Z"}
+[INFO ] 2019-09-09 01:28:09,357 TC0002_Post_Deletet_API_Testing.post_delete_RestApi_on_Google_search_Server() - Access to URLhttp://216.10.245.166
+[INFO ] 2019-09-09 01:28:09,657 TC0002_Post_Deletet_API_Testing.post_delete_RestApi_on_Google_search_Server() - Verified Status code 200 after posting successfully
+[INFO ] 2019-09-09 01:28:09,658 TC0002_Post_Deletet_API_Testing.post_delete_RestApi_on_Google_search_Server() - Verified Content type of posting is JSON
+[INFO ] 2019-09-09 01:28:09,658 TC0002_Post_Deletet_API_Testing.post_delete_RestApi_on_Google_search_Server() - Verified that following are the response details of post{"status":"OK","place_id":"a92c01eed197c71598f3d71f70181a49","scope":"APP","reference":"29cd31301a1c65400962756e6da7209b29cd31301a1c65400962756e6da7209b","id":"29cd31301a1c65400962756e6da7209b"}
+[INFO ] 2019-09-09 01:28:09,659 TC0002_Post_Deletet_API_Testing.post_delete_RestApi_on_Google_search_Server() - Verified that following placeID found: a92c01eed197c71598f3d71f70181a49
+[INFO ] 2019-09-09 01:28:09,960 TC0002_Post_Deletet_API_Testing.post_delete_RestApi_on_Google_search_Server() - Verified Status code 200 after deleting place ID: a92c01eed197c71598f3d71f70181a49
+[INFO ] 2019-09-09 01:28:09,961 TC0002_Post_Deletet_API_Testing.post_delete_RestApi_on_Google_search_Server() - Verified Content type od deleteing is JSON after deleting
+[INFO ] 2019-09-09 01:28:09,962 TC0002_Post_Deletet_API_Testing.post_delete_RestApi_on_Google_search_Server() - Verified that Status is OK after deleting
+[INFO ] 2019-09-09 01:28:09,965 TC0002_Post_Deletet_API_Testing.post_delete_RestApi_on_reqres_server() - Access to URLhttps://reqres.in
+[INFO ] 2019-09-09 01:28:11,997 TC0002_Post_Deletet_API_Testing.post_delete_RestApi_on_reqres_server() - Verified Status code 201 after posting successfully
+[INFO ] 2019-09-09 01:28:11,997 TC0002_Post_Deletet_API_Testing.post_delete_RestApi_on_reqres_server() - Verified Content type of posting is JSON
+[INFO ] 2019-09-09 01:28:11,998 TC0002_Post_Deletet_API_Testing.post_delete_RestApi_on_reqres_server() - Verified that following are the response details of post{"id":"737","createdAt":"2019-09-08T19:58:12.340Z"}
+[INFO ] 2019-09-09 01:28:11,998 TC0002_Post_Deletet_API_Testing.post_delete_RestApi_on_reqres_server() - Verified that following tokenID found: 737
+[INFO ] 2019-09-09 01:28:13,458 TC0002_Post_Deletet_API_Testing.post_delete_RestApi_on_reqres_server() - Verified Status code 201 after deleting place ID: 737
+[INFO ] 2019-09-09 01:28:13,459 TC0002_Post_Deletet_API_Testing.post_delete_RestApi_on_reqres_server() - Verified Content type od deleteing is JSON after deleting
