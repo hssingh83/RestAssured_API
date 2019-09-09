@@ -14,8 +14,8 @@ import io.restassured.response.Response;
 import static org.hamcrest.Matchers.equalTo;
 
  
-public class TC0001_Post_API_Testing {
-	private static Logger log =LogManager.getLogger(TC0001_Post_API_Testing.class.getName());
+public class TC0001_Post_JSON_API_Testing {
+	private static Logger log =LogManager.getLogger(TC0001_Post_JSON_API_Testing.class.getName());
 
   @Test(priority=1)
 	public void postRestApi_on_Google_search_Server() {

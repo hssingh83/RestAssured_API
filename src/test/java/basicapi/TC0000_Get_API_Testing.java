@@ -21,7 +21,7 @@ public class TC0000_Get_API_Testing {
 	public void getRestApi() {
 		
 		String url= RestAssured.baseURI="https://reqres.in";
-		log.info("Access to URL" +url);
+		log.info("Access to URL: " +url);
 		
    given().
 		

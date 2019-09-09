@@ -33,7 +33,7 @@
         
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>testng_Debug.xml</suiteXmlFile>
+            <suiteXmlFile>testng_Regression.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>    
