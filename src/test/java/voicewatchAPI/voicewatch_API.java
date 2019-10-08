@@ -36,8 +36,8 @@ private static Logger log =LogManager.getLogger(voicewatch_API.class.getName());
 	@Test(priority=1)
 	public void vw_Get_Test_Result() {
 		
-		
-		RestAssured.baseURI="https://os-2k16-vm332.empirix.com";
+		RestAssured.baseURI=prop.getProperty("webapp");
+	//	RestAssured.baseURI="https://os-2k16-vm332.empirix.com";
 		
 		
 		Response hari= given().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
@@ -48,13 +48,11 @@ private static Logger log =LogManager.getLogger(voicewatch_API.class.getName());
 		                                
 	}
 
-	
-	
 	@Test(priority=2)
 	public void vw_Get_vw_dashboard() {
 		
 		
-		RestAssured.baseURI="https://os-2k16-vm332.empirix.com";
+		RestAssured.baseURI=prop.getProperty("webapp");
 		
 		
 		Response hari= given().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
@@ -68,7 +66,7 @@ private static Logger log =LogManager.getLogger(voicewatch_API.class.getName());
 	public void vw_Get_vw_Variable() {
 		
 		
-		RestAssured.baseURI="https://os-2k16-vm332.empirix.com";
+		RestAssured.baseURI=prop.getProperty("webapp");
 		
 		
 		Response hari= given().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).

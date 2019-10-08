@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\hsingh\AppData\Local\Temp\testng-eclipse-814410619\testng-customsuite.xml</span>
+                    <span>C:\Users\hsingh\AppData\Local\Temp\testng-eclipse--1902147599\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,6 +103,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="voicewatchAPI.voicewatch_API" hash-for-method="vw_Get_Test_Result">vw_Get_Test_Result</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="voicewatchAPI.voicewatch_API" hash-for-method="vw_Get_vw_Variable">vw_Get_vw_Variable</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -137,6 +142,13 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="vw_Get_vw_Variable">
+                  </a> <!-- vw_Get_vw_Variable -->
+                  <span class="method-name">vw_Get_vw_Variable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="vw_Get_vw_dashboard">
                   </a> <!-- vw_Get_vw_dashboard -->
                   <span class="method-name">vw_Get_vw_dashboard</span>
@@ -147,7 +159,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\hsingh\AppData\Local\Temp\testng-eclipse-814410619\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\hsingh\AppData\Local\Temp\testng-eclipse--1902147599\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -196,20 +208,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'vw_Get_Test_Result')
+data.setCell(0, 1, 'vw_Get_vw_dashboard')
 data.setCell(0, 2, 'voicewatchAPI.voicewatch_API')
-data.setCell(0, 3, 8952);
+data.setCell(0, 3, 21758);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'vw_Get_vw_dashboard')
+data.setCell(1, 1, 'vw_Get_vw_Variable')
 data.setCell(1, 2, 'voicewatchAPI.voicewatch_API')
-data.setCell(1, 3, 7806);
+data.setCell(1, 3, 17935);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'vw_Get_Test_Result')
+data.setCell(2, 2, 'voicewatchAPI.voicewatch_API')
+data.setCell(2, 3, 11447);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <span class="suite-total-time">Total running time: 51 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -242,11 +258,15 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">vw_Get_Test_Result</span>
-                <span class="method-start">24 ms</span>
+                <span class="method-start">20 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">vw_Get_vw_dashboard</span>
-                <span class="method-start">8977 ms</span>
+                <span class="method-start">11479 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">vw_Get_vw_Variable</span>
+                <span class="method-start">33237 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

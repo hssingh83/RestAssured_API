@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16783" started-at="2019-10-08T13:55:02Z" finished-at="2019-10-08T13:55:19Z">
+  <suite name="Default suite" duration-ms="51177" started-at="2019-10-08T14:36:48Z" finished-at="2019-10-08T14:37:39Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16783" started-at="2019-10-08T13:55:02Z" finished-at="2019-10-08T13:55:19Z">
+    <test name="Default test" duration-ms="51177" started-at="2019-10-08T14:36:48Z" finished-at="2019-10-08T14:37:39Z">
       <class name="voicewatchAPI.voicewatch_API">
-        <test-method status="PASS" signature="getData()[pri:0, instance:voicewatchAPI.voicewatch_API@6b2ea799]" name="getData" is-config="true" duration-ms="12" started-at="2019-10-08T13:55:02Z" finished-at="2019-10-08T13:55:02Z">
+        <test-method status="PASS" signature="getData()[pri:0, instance:voicewatchAPI.voicewatch_API@6b2ea799]" name="getData" is-config="true" duration-ms="8" started-at="2019-10-08T14:36:48Z" finished-at="2019-10-08T14:36:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getData -->
-        <test-method status="PASS" signature="vw_Get_Test_Result()[pri:1, instance:voicewatchAPI.voicewatch_API@6b2ea799]" name="vw_Get_Test_Result" duration-ms="8952" started-at="2019-10-08T13:55:02Z" finished-at="2019-10-08T13:55:11Z">
+        <test-method status="PASS" signature="vw_Get_Test_Result()[pri:1, instance:voicewatchAPI.voicewatch_API@6b2ea799]" name="vw_Get_Test_Result" duration-ms="11447" started-at="2019-10-08T14:36:48Z" finished-at="2019-10-08T14:37:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vw_Get_Test_Result -->
-        <test-method status="PASS" signature="vw_Get_vw_dashboard()[pri:2, instance:voicewatchAPI.voicewatch_API@6b2ea799]" name="vw_Get_vw_dashboard" duration-ms="7806" started-at="2019-10-08T13:55:11Z" finished-at="2019-10-08T13:55:19Z">
+        <test-method status="PASS" signature="vw_Get_vw_dashboard()[pri:2, instance:voicewatchAPI.voicewatch_API@6b2ea799]" name="vw_Get_vw_dashboard" duration-ms="21758" started-at="2019-10-08T14:37:00Z" finished-at="2019-10-08T14:37:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vw_Get_vw_dashboard -->
+        <test-method status="PASS" signature="vw_Get_vw_Variable()[pri:3, instance:voicewatchAPI.voicewatch_API@6b2ea799]" name="vw_Get_vw_Variable" duration-ms="17935" started-at="2019-10-08T14:37:21Z" finished-at="2019-10-08T14:37:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vw_Get_vw_Variable -->
       </class> <!-- voicewatchAPI.voicewatch_API -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
