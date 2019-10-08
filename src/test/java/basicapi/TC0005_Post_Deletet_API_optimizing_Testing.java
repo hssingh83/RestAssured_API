@@ -83,7 +83,7 @@ public class TC0005_Post_Deletet_API_optimizing_Testing {
 		String url2= RestAssured.baseURI=prop.getProperty("Host1");
 		log.info("Access to URL" +url2);
 		
-		Response res2=given().body (payLoads.getPostData05_2()).
+		Response res2=given().body (payLoads.getPostData04_1()).
          when().post(resources.placePostData5_2()).
 		then().assertThat().statusCode(201).and().contentType(ContentType.JSON)
 		.and().

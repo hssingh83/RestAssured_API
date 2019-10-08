@@ -52,7 +52,9 @@ public class TC0004_Post_API_optimizing_Testing {
 		
 		String responseString1=res1.asString();
 		
-		JsonPath js1= new JsonPath(responseString1);
+		System.out.println(responseString1);
+		
+	//	JsonPath js1= new JsonPath(responseString1);
 
 
 	

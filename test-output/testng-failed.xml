@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="basicapi.TC0006_Post_XML_API_Testing">
+      <class name="files.reuseable">
         <methods>
-          <include name="postRestApi_on_reqres_server"/>
+          <include name="getTokenID"/>
         </methods>
-      </class> <!-- basicapi.TC0006_Post_XML_API_Testing -->
+      </class> <!-- files.reuseable -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

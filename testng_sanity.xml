@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+ <listeners>
+<listener class-name="resources.ExtentReporterNG"/>
+<listener class-name="resources.listeners"></listener>
+</listeners>
+
+     
+     <test  name="Test Get voicewatch_Api Feature">
+    <classes>
+     
+      <class name="voicewatchAPI.voicewatch_API"/>
+      
+     </classes> 
+     </test>
+     
+         
+     
+     
+     
+</suite> <!-- Suite -->

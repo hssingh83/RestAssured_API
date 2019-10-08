@@ -30,4 +30,12 @@ public class resources {
 		
 	}
  
+ public static String openamAuth_2() {
+		
+		String auth="/openam/json/authenticate";
+		return auth;
+		
+	}
+ 
+ 
 }

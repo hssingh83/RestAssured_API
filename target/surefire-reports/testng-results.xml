@@ -1,93 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="15438" started-at="2019-09-09T15:43:09Z" finished-at="2019-09-09T15:43:24Z">
+  <suite name="Suite" duration-ms="21607" started-at="2019-10-08T14:06:37Z" finished-at="2019-10-08T14:06:58Z">
     <groups>
     </groups>
-    <test name="Test Get Api Feature" duration-ms="3260" started-at="2019-09-09T15:43:09Z" finished-at="2019-09-09T15:43:12Z">
-      <class name="basicapi.TC0000_Get_API_Testing">
-        <test-method status="PASS" signature="getRestApi()[pri:0, instance:basicapi.TC0000_Get_API_Testing@4f6ee6e4]" name="getRestApi" duration-ms="3244" started-at="2019-09-09T15:43:09Z" finished-at="2019-09-09T15:43:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getRestApi -->
-      </class> <!-- basicapi.TC0000_Get_API_Testing -->
-    </test> <!-- Test Get Api Feature -->
-    <test name="Test Post Api Feature for JSON" duration-ms="1862" started-at="2019-09-09T15:43:12Z" finished-at="2019-09-09T15:43:14Z">
-      <class name="basicapi.TC0001_Post_JSON_API_Testing">
-        <test-method status="PASS" signature="postRestApi_on_Google_search_Server()[pri:1, instance:basicapi.TC0001_Post_JSON_API_Testing@8f4ea7c]" name="postRestApi_on_Google_search_Server" duration-ms="296" started-at="2019-09-09T15:43:12Z" finished-at="2019-09-09T15:43:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postRestApi_on_Google_search_Server -->
-        <test-method status="PASS" signature="postRestApi_on_reqres_server()[pri:2, instance:basicapi.TC0001_Post_JSON_API_Testing@8f4ea7c]" name="postRestApi_on_reqres_server" duration-ms="1566" started-at="2019-09-09T15:43:12Z" finished-at="2019-09-09T15:43:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postRestApi_on_reqres_server -->
-      </class> <!-- basicapi.TC0001_Post_JSON_API_Testing -->
-    </test> <!-- Test Post Api Feature for JSON -->
-    <test name="Test Post_Delete_RestApi Feature " duration-ms="3461" started-at="2019-09-09T15:43:14Z" finished-at="2019-09-09T15:43:17Z">
-      <class name="basicapi.TC0002_Post_Deletet_API_Testing">
-        <test-method status="PASS" signature="post_delete_RestApi_on_Google_search_Server()[pri:1, instance:basicapi.TC0002_Post_Deletet_API_Testing@77847718]" name="post_delete_RestApi_on_Google_search_Server" duration-ms="556" started-at="2019-09-09T15:43:14Z" finished-at="2019-09-09T15:43:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- post_delete_RestApi_on_Google_search_Server -->
-        <test-method status="PASS" signature="post_delete_RestApi_on_reqres_server()[pri:1, instance:basicapi.TC0002_Post_Deletet_API_Testing@77847718]" name="post_delete_RestApi_on_reqres_server" duration-ms="2893" started-at="2019-09-09T15:43:14Z" finished-at="2019-09-09T15:43:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- post_delete_RestApi_on_reqres_server -->
-      </class> <!-- basicapi.TC0002_Post_Deletet_API_Testing -->
-    </test> <!-- Test Post_Delete_RestApi Feature  -->
-    <test name="Test Get Api Feature optimizing " duration-ms="974" started-at="2019-09-09T15:43:17Z" finished-at="2019-09-09T15:43:18Z">
-      <class name="basicapi.TC0003_Get_API_optimizing_Testing">
-        <test-method status="PASS" signature="getRestApi()[pri:0, instance:basicapi.TC0003_Get_API_optimizing_Testing@77fbd92c]" name="getRestApi" duration-ms="970" started-at="2019-09-09T15:43:17Z" finished-at="2019-09-09T15:43:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getRestApi -->
-        <test-method status="PASS" signature="getData()[pri:0, instance:basicapi.TC0003_Get_API_optimizing_Testing@77fbd92c]" name="getData" is-config="true" duration-ms="0" started-at="2019-09-09T15:43:17Z" finished-at="2019-09-09T15:43:17Z">
+    <test name="Test Get voicewatch_Api Feature" duration-ms="21607" started-at="2019-10-08T14:06:37Z" finished-at="2019-10-08T14:06:58Z">
+      <class name="voicewatchAPI.voicewatch_API">
+        <test-method status="PASS" signature="getData()[pri:0, instance:voicewatchAPI.voicewatch_API@6d763516]" name="getData" is-config="true" duration-ms="8" started-at="2019-10-08T14:06:37Z" finished-at="2019-10-08T14:06:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getData -->
-      </class> <!-- basicapi.TC0003_Get_API_optimizing_Testing -->
-    </test> <!-- Test Get Api Feature optimizing  -->
-    <test name="Test Post_Delete_RestApi Feature optimizing " duration-ms="1637" started-at="2019-09-09T15:43:18Z" finished-at="2019-09-09T15:43:20Z">
-      <class name="basicapi.TC0004_Post_API_optimizing_Testing">
-        <test-method status="PASS" signature="postRestApi_on_Google_search_Server()[pri:1, instance:basicapi.TC0004_Post_API_optimizing_Testing@35e2d654]" name="postRestApi_on_Google_search_Server" duration-ms="204" started-at="2019-09-09T15:43:18Z" finished-at="2019-09-09T15:43:18Z">
+        <test-method status="PASS" signature="vw_Get_Test_Result()[pri:1, instance:voicewatchAPI.voicewatch_API@6d763516]" name="vw_Get_Test_Result" duration-ms="8714" started-at="2019-10-08T14:06:37Z" finished-at="2019-10-08T14:06:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- postRestApi_on_Google_search_Server -->
-        <test-method status="PASS" signature="getData()[pri:0, instance:basicapi.TC0004_Post_API_optimizing_Testing@35e2d654]" name="getData" is-config="true" duration-ms="0" started-at="2019-09-09T15:43:18Z" finished-at="2019-09-09T15:43:18Z">
+        </test-method> <!-- vw_Get_Test_Result -->
+        <test-method status="PASS" signature="vw_Get_vw_dashboard()[pri:2, instance:voicewatchAPI.voicewatch_API@6d763516]" name="vw_Get_vw_dashboard" duration-ms="6126" started-at="2019-10-08T14:06:45Z" finished-at="2019-10-08T14:06:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getData -->
-        <test-method status="PASS" signature="postRestApi_on_reqres_server()[pri:2, instance:basicapi.TC0004_Post_API_optimizing_Testing@35e2d654]" name="postRestApi_on_reqres_server" duration-ms="1433" started-at="2019-09-09T15:43:18Z" finished-at="2019-09-09T15:43:20Z">
+        </test-method> <!-- vw_Get_vw_dashboard -->
+        <test-method status="PASS" signature="vw_Get_vw_Variable()[pri:3, instance:voicewatchAPI.voicewatch_API@6d763516]" name="vw_Get_vw_Variable" duration-ms="6735" started-at="2019-10-08T14:06:51Z" finished-at="2019-10-08T14:06:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- postRestApi_on_reqres_server -->
-      </class> <!-- basicapi.TC0004_Post_API_optimizing_Testing -->
-    </test> <!-- Test Post_Delete_RestApi Feature optimizing  -->
-    <test name="Test Post_Deletet_API Feature optimizing " duration-ms="3657" started-at="2019-09-09T15:43:20Z" finished-at="2019-09-09T15:43:24Z">
-      <class name="basicapi.TC0005_Post_Deletet_API_optimizing_Testing">
-        <test-method status="PASS" signature="getData()[pri:0, instance:basicapi.TC0005_Post_Deletet_API_optimizing_Testing@293a5bf6]" name="getData" is-config="true" duration-ms="0" started-at="2019-09-09T15:43:20Z" finished-at="2019-09-09T15:43:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getData -->
-        <test-method status="PASS" signature="post_delete_RestApi_on_Google_search_Server()[pri:1, instance:basicapi.TC0005_Post_Deletet_API_optimizing_Testing@293a5bf6]" name="post_delete_RestApi_on_Google_search_Server" duration-ms="483" started-at="2019-09-09T15:43:20Z" finished-at="2019-09-09T15:43:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- post_delete_RestApi_on_Google_search_Server -->
-        <test-method status="PASS" signature="post_delete_RestApi_on_reqres_server()[pri:2, instance:basicapi.TC0005_Post_Deletet_API_optimizing_Testing@293a5bf6]" name="post_delete_RestApi_on_reqres_server" duration-ms="3174" started-at="2019-09-09T15:43:20Z" finished-at="2019-09-09T15:43:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- post_delete_RestApi_on_reqres_server -->
-      </class> <!-- basicapi.TC0005_Post_Deletet_API_optimizing_Testing -->
-    </test> <!-- Test Post_Deletet_API Feature optimizing  -->
-    <test name="Test Post API Feature for XML " duration-ms="430" started-at="2019-09-09T15:43:24Z" finished-at="2019-09-09T15:43:24Z">
-      <class name="basicapi.TC0006_Post_XML_API_Testing">
-        <test-method status="PASS" signature="postRestApi_on_Google_search_Server()[pri:1, instance:basicapi.TC0006_Post_XML_API_Testing@409bf450]" name="postRestApi_on_Google_search_Server" duration-ms="430" started-at="2019-09-09T15:43:24Z" finished-at="2019-09-09T15:43:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postRestApi_on_Google_search_Server -->
-      </class> <!-- basicapi.TC0006_Post_XML_API_Testing -->
-    </test> <!-- Test Post API Feature for XML  -->
+        </test-method> <!-- vw_Get_vw_Variable -->
+      </class> <!-- voicewatchAPI.voicewatch_API -->
+    </test> <!-- Test Get voicewatch_Api Feature -->
   </suite> <!-- Suite -->
 </testng-results>

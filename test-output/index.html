@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\hsingh\AppData\Local\Temp\testng-eclipse-985884862\testng-customsuite.xml</span>
+                    <span>C:\Users\hsingh\AppData\Local\Temp\testng-eclipse-814410619\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="basicapi.TC0006_Post_XML_API_Testing" hash-for-method="postRestApi_on_Google_search_Server">postRestApi_on_Google_search_Server</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="voicewatchAPI.voicewatch_API" hash-for-method="vw_Get_Test_Result">vw_Get_Test_Result</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="voicewatchAPI.voicewatch_API" hash-for-method="vw_Get_vw_dashboard">vw_Get_vw_dashboard</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -120,14 +125,21 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">basicapi.TC0006_Post_XML_API_Testing</span>
+              <span class="class-name">voicewatchAPI.voicewatch_API</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="postRestApi_on_Google_search_Server">
-                  </a> <!-- postRestApi_on_Google_search_Server -->
-                  <span class="method-name">postRestApi_on_Google_search_Server</span>
+                  <a name="vw_Get_Test_Result">
+                  </a> <!-- vw_Get_Test_Result -->
+                  <span class="method-name">vw_Get_Test_Result</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="vw_Get_vw_dashboard">
+                  </a> <!-- vw_Get_vw_dashboard -->
+                  <span class="method-name">vw_Get_vw_dashboard</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +147,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\hsingh\AppData\Local\Temp\testng-eclipse-985884862\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\hsingh\AppData\Local\Temp\testng-eclipse-814410619\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -144,7 +156,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;basicapi.TC0006_Post_XML_API_Testing&quot;/&gt;
+      &lt;class name=&quot;voicewatchAPI.voicewatch_API&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -184,16 +196,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'postRestApi_on_Google_search_Server')
-data.setCell(0, 2, 'basicapi.TC0006_Post_XML_API_Testing')
-data.setCell(0, 3, 2092);
+data.setCell(0, 1, 'vw_Get_Test_Result')
+data.setCell(0, 2, 'voicewatchAPI.voicewatch_API')
+data.setCell(0, 3, 8952);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'vw_Get_vw_dashboard')
+data.setCell(1, 2, 'voicewatchAPI.voicewatch_API')
+data.setCell(1, 3, 7806);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -219,10 +235,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">basicapi.TC0006_Post_XML_API_Testing</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">postRestApi_on_Google_search_Server</span>
+              <div class="chronological-class-name">voicewatchAPI.voicewatch_API</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">getData</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">vw_Get_Test_Result</span>
+                <span class="method-start">24 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">vw_Get_vw_dashboard</span>
+                <span class="method-start">8977 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

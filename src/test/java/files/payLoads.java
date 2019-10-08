@@ -53,13 +53,15 @@ public class payLoads {
 		return b;	
 			
 	}
-	public static String getPostData05_2()
+
+
+	/*public static String getPostauthcred()
 	{
-		String b=("{"+
-			    "\"email\": \"eve.holt@reqres.in\","+
-			    "\"password\": \"cityslicka\""+
-			"}");
+		String b=({\"username\": "\myuser\", \"password\": \"mypassword\"});
 		return b;	
 			
-	}
+	}*/
+	
+	
+	
 }
