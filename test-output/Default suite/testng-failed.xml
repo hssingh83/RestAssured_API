@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="voicewatchAPI.voicewatch_API">
+      <class name="voicewatchAPI.voicewatch_Get_API">
         <methods>
+          <include name="alerts"/>
           <include name="getData"/>
-          <include name="vw_Get_vw_Variable"/>
         </methods>
-      </class> <!-- voicewatchAPI.voicewatch_API -->
+      </class> <!-- voicewatchAPI.voicewatch_Get_API -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

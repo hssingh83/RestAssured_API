@@ -18,10 +18,10 @@ import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
-public class voicewatch_API {
+public class voicewatch_Post_API {
 	
 
-private static Logger log =LogManager.getLogger(voicewatch_API.class.getName());
+private static Logger log =LogManager.getLogger(voicewatch_Post_API.class.getName());
 
 	
 	Properties prop=new Properties();
@@ -37,14 +37,19 @@ private static Logger log =LogManager.getLogger(voicewatch_API.class.getName());
 	public void vw_Get_Test_Result() {
 		
 		RestAssured.baseURI=prop.getProperty("webapp");
+		log.info("Host infomation Webapp server: "+prop.getProperty("webapp"));
+		
 	//	RestAssured.baseURI="https://os-2k16-vm332.empirix.com";
 		
 		
-		Response hari= given().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
+		            Response res= given().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
 			        when().get("/webapp/test-results").then().assertThat().statusCode(200).extract().response();
+		            
+		            String ResposeString=res.asString();
+                    log.info("Test Result-Respose: "+ ResposeString);
 		
-		                                JsonPath js=reuseable.rawToJson(hari);
-		               log.debug(js.get());                            	               
+		            JsonPath js=reuseable.rawToJson(res);
+		            log.debug("final result of Tet Result is: " +js.get());                            	               
 		                                
 	}
 
@@ -55,25 +60,14 @@ private static Logger log =LogManager.getLogger(voicewatch_API.class.getName());
 		RestAssured.baseURI=prop.getProperty("webapp");
 		
 		
-		Response hari= given().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
+		Response res= given().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
 			        when().get("/webapp/vw-dashboard").then().assertThat().statusCode(200).extract().response();
 		
-		                                JsonPath js=reuseable.rawToJson(hari);
-		               log.debug(js.get());         
-		            	
+						 String ResposeString=res.asString();
+				         log.info("Voicewatch Respose: "+ ResposeString);
+		
+		               JsonPath js=reuseable.rawToJson(res);
+		               log.debug("VoiceWatch Dashboard result: "+js.get());         
+	}	            	
 	}
-	@Test(priority=3)
-	public void vw_Get_vw_Variable() {
-		
-		
-		RestAssured.baseURI=prop.getProperty("webapp");
-		
-		
-		Response hari= given().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get("/webapp/global-variables/27").then().assertThat().statusCode(200).extract().response();
-		
-		                                JsonPath js=reuseable.rawToJson(hari);
-		               log.debug(js.get());   
-
-}
-}
+	
