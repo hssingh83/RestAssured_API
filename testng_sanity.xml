@@ -8,15 +8,22 @@
 </listeners>
 
      
-     <test  name="Test Get voicewatch_Api Feature">
+     <test  name="Test Get voicewatch_Get_Api Feature">
     <classes>
      
-      <class name="voicewatchAPI.voicewatch_API"/>
+      <class name="voicewatchAPI.voicewatch_Get_API"/>
       
      </classes> 
      </test>
      
          
+          <test  name="Test Post voicewatch_Post_Api Feature">
+    <classes>
+     
+      <class name="voicewatchAPI.voicewatch_Post_API"/>
+      
+     </classes> 
+     </test>
      
      
      
