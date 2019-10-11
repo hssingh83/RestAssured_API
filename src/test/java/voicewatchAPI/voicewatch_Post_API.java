@@ -13,10 +13,12 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import files.reuseable;
+import files.vw_reuseable;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
 
 public class voicewatch_Post_API {
 	
@@ -34,40 +36,48 @@ private static Logger log =LogManager.getLogger(voicewatch_Post_API.class.getNam
 	}
 	
 	@Test(priority=1)
-	public void vw_Get_Test_Result() {
+	public void vw_post_Tag() {
 		
 		RestAssured.baseURI=prop.getProperty("webapp");
 		log.info("Host infomation Webapp server: "+prop.getProperty("webapp"));
 		
-	//	RestAssured.baseURI="https://os-2k16-vm332.empirix.com";
+	
 		
-		
-		            Response res= given().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get("/webapp/test-results").then().assertThat().statusCode(200).extract().response();
+	Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID())
+	.body("{\"name\": \"okaol56kll\"}").
+	 when().post("/webapp/tags").then().assertThat().statusCode(200).extract().response();
 		            
-		            String ResposeString=res.asString();
-                    log.info("Test Result-Respose: "+ ResposeString);
+		            
+		    //        String ResposeString=res.asString();
+			 //       log.info("Voicewatch Respose of User Info: "+ res);
+	                JsonPath js=reuseable.rawToJson(res);
+	               log.debug("User Respose: "+js.get("id")); 
+	               
+	                          int id =js.get("id");
+	                          
+	                          log.debug("info: "+id);
+		            
+		            
+		//=========================================================================================            
+		            
+		          //Task 3 place this Tag id in the Delete request
+			  	given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookies", "iPlanetDirectoryPro="+reuseable.getTokenID()).
+			  		body("{"+
+			  		"\"id\": \""+id+"\""+
+			  		"\"scopes\": [ \"READ\", \"WRITE\" ]"+
+			  		"}").
+			  		when().delete("/webapp/tags/").then().assertThat().statusCode(200);
+	                          
+	                          
+	               /*           given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookies", "iPlanetDirectoryPro="+reuseable.getTokenID()).
+	      			  		when().delete("/webapp/tags/{55}").then().assertThat().statusCode(200);  */    
 		
-		            JsonPath js=reuseable.rawToJson(res);
-		            log.debug("final result of Tet Result is: " +js.get());                            	               
-		                                
-	}
 
-	@Test(priority=2)
-	public void vw_Get_vw_dashboard() {
+			  	
 		
-		
-		RestAssured.baseURI=prop.getProperty("webapp");
-		
-		
-		Response res= given().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get("/webapp/vw-dashboard").then().assertThat().statusCode(200).extract().response();
-		
-						 String ResposeString=res.asString();
-				         log.info("Voicewatch Respose: "+ ResposeString);
-		
-		               JsonPath js=reuseable.rawToJson(res);
-		               log.debug("VoiceWatch Dashboard result: "+js.get());         
-	}	            	
+			  /*	 given().baseUri("https://os-2k16-vm332.empirix.com").basePath("/webapp/tags").delete("/55");*/
+		            
+		}
+
 	}
 	

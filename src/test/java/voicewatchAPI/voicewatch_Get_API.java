@@ -42,7 +42,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 	//	RestAssured.baseURI="https://os-2k16-vm332.empirix.com";
 		
 		
-		            Response res= given().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
+		            Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
 			        when().get("/webapp/test-results").then().assertThat().statusCode(200).extract().response();
 		            
 		            String ResposeString=res.asString();
@@ -60,7 +60,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		RestAssured.baseURI=prop.getProperty("webapp");
 		
 		
-		Response res= given().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
+		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
 			        when().get("/webapp/vw-dashboard").then().assertThat().statusCode(200).extract().response();
 		
 						 String ResposeString=res.asString();
@@ -77,7 +77,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		RestAssured.baseURI=prop.getProperty("webapp");
 		
 		
-		Response res= given().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
+		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
 			        when().get("/webapp/global-variables/27").then().assertThat().statusCode(200).extract().response();
 		
 		
@@ -94,7 +94,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		RestAssured.baseURI=prop.getProperty("webapp");
 		
 		
-		Response res= given().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
+		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
 			        when().get("/webapp/tests").then().assertThat().statusCode(200).extract().response();
 		
 		
@@ -128,7 +128,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		RestAssured.baseURI=prop.getProperty("webapp");
 		
 		
-		Response res= given().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
+		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
 			        when().get("/webapp/scripts").then().assertThat().statusCode(200).extract().response();
 		
 		
@@ -145,7 +145,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		RestAssured.baseURI=prop.getProperty("webapp");
 		
 		
-		Response res= given().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
+		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
 			        when().get("/webapp/scripts/summary").then().assertThat().statusCode(200).extract().response();
 		
 		
@@ -163,7 +163,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		RestAssured.baseURI=prop.getProperty("webapp");
 		
 		
-		Response res= given().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
+		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
 			        when().get("/webapp/user-info").then().assertThat().statusCode(200).extract().response();
 		
 		
@@ -180,7 +180,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		RestAssured.baseURI=prop.getProperty("webapp");
 		
 		
-		Response res= given().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
+		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
 			        when().get("/webapp/clients").then().assertThat().statusCode(200).extract().response();
 		
 		
@@ -197,7 +197,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		RestAssured.baseURI=prop.getProperty("webapp");
 		
 		
-		Response res= given().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
+		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
 			        when().get("/webapp/partners").then().assertThat().statusCode(200).extract().response();
 		
 		
@@ -214,7 +214,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		RestAssured.baseURI=prop.getProperty("webapp");
 		
 		
-		Response res= given().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
+		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
 			        when().get("/webapp/users/admin/notifications").then().assertThat().statusCode(200).extract().response();
 		
 		
@@ -230,7 +230,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		RestAssured.baseURI=prop.getProperty("webapp");
 		
 		
-		Response res= given().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
+		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
 			        when().get("/webapp/clients/-2/info").then().assertThat().statusCode(200).extract().response();
 		
 		
@@ -248,7 +248,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		RestAssured.baseURI=prop.getProperty("webapp");
 		
 		
-		Response res= given().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
+		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
 			        when().get("/webapp/hammer-groups").then().assertThat().statusCode(200).extract().response();
 		
 		
@@ -266,7 +266,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		RestAssured.baseURI=prop.getProperty("webapp");
 		
 		
-		Response res= given().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
+		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
 			        when().get("/webapp/tags").then().assertThat().statusCode(200).extract().response();
 		
 		
@@ -284,7 +284,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		RestAssured.baseURI=prop.getProperty("webapp");
 		
 		
-		Response res= given().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
+		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
 			        when().get("/webapp/notifications").then().assertThat().statusCode(200).extract().response();
 		
 		
@@ -303,7 +303,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		RestAssured.baseURI=prop.getProperty("webapp");
 		
 		
-		Response res= given().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
+		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
 			        when().get("/webapp/hammer-labels").then().assertThat().statusCode(200).extract().response();
 		
 		
@@ -321,7 +321,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		RestAssured.baseURI=prop.getProperty("webapp");
 		
 		
-		Response res= given().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
+		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
 			        when().get("/webapp/admin-dashboard/summary").then().assertThat().statusCode(200).extract().response();
 		
 		
@@ -339,7 +339,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		RestAssured.baseURI=prop.getProperty("webapp");
 		
 		
-		Response res= given().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
+		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
 			        when().get("/webapp/admin-dashboard/details").then().assertThat().statusCode(200).extract().response();
 		
 		

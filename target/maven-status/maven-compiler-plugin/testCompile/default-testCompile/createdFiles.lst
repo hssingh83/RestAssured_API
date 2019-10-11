@@ -1,7 +1,7 @@
-files\payLoads.class
 basicapi\TC0002_Post_Deletet_API_Testing.class
 files\resources.class
 basicapi\TC0005_Post_Deletet_API_optimizing_Testing.class
 basicapi\TC0000_Get_API_Testing.class
 basicapi\TC0003_Get_API_optimizing_Testing.class
+files\payLoads.class
 basicapi\TC0004_Post_API_optimizing_Testing.class

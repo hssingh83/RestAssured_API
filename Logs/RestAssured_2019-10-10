@@ -1,0 +1,7 @@
+[INFO ] 2019-10-10 23:22:38,687 voicewatch_Post_API.vw_post_Tag() - Host infomation Webapp server: https://os-2k16-vm332.empirix.com
+[INFO ] 2019-10-10 23:22:39,333 voicewatch_Get_API.getTokenID() - Host infomation OpenAM server:https://os-2k16-vm333.empirix.com
+[INFO ] 2019-10-10 23:22:41,880 voicewatch_Get_API.getTokenID() - Auth-Respose: {"tokenId":"AQIC5wM2LY4SfcwDV5bKp0juM087Z49tqChClgqTX0cXa8E.*AAJTSQACMDEAAlNLABI4MTk2MTExODE0MzAxODE5MDU.*","successUrl":"/openam/console"}
+[DEBUG] 2019-10-10 23:22:45,114 voicewatch_Post_API.vw_post_Tag() - User Respose: 63
+[DEBUG] 2019-10-10 23:22:45,139 voicewatch_Post_API.vw_post_Tag() - info: 63
+[INFO ] 2019-10-10 23:22:45,144 voicewatch_Get_API.getTokenID() - Host infomation OpenAM server:https://os-2k16-vm333.empirix.com
+[INFO ] 2019-10-10 23:22:46,915 voicewatch_Get_API.getTokenID() - Auth-Respose: {"tokenId":"AQIC5wM2LY4SfczuaPWimw01tx23LWFws5tInI8YyJDcQ6A.*AAJTSQACMDEAAlNLABQtMTEyNTIxNjIzNDE2OTEzNTI5OQ..*","successUrl":"/openam/console"}
