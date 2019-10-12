@@ -34,7 +34,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 	
 		
   
-   Response res=given().relaxedHTTPSValidation().header("Content-Type","application/json").header("X-OpenAM-Username","admin").header("X-OpenAM-Password","password").
+   Response res=given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("X-OpenAM-Username","admin").header("X-OpenAM-Password","password").
 		        when().post("/openam/json/authenticate").
 		        then().assertThat().statusCode(200).extract().response();
    

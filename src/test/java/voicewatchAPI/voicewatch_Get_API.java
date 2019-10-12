@@ -13,6 +13,8 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import files.reuseable;
+import files.vw_resources;
+import files.vw_reuseable;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
@@ -43,12 +45,12 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		
 		
 		            Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get("/webapp/test-results").then().assertThat().statusCode(200).extract().response();
+			        when().get(vw_resources.Test_Results()).then().assertThat().statusCode(200).and().header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
 		            
 		            String ResposeString=res.asString();
                     log.info("Test Result-Respose: "+ ResposeString);
 		
-		            JsonPath js=reuseable.rawToJson(res);
+		            JsonPath js=vw_reuseable.rawToJson(res);
 		            log.debug("final result of Tet Result is: " +js.get());                            	               
 		                                
 	}
@@ -61,12 +63,10 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		
 		
 		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get("/webapp/vw-dashboard").then().assertThat().statusCode(200).extract().response();
+			        when().get(vw_resources.dashboard()).then().assertThat().statusCode(200).and().header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
 		
-						 String ResposeString=res.asString();
-				         log.info("Voicewatch Respose: "+ ResposeString);
-		
-		               JsonPath js=reuseable.rawToJson(res);
+							
+		               JsonPath js=vw_reuseable.rawToJson(res);
 		               log.debug("VoiceWatch Dashboard result: "+js.get());         
 		            	
 	}
@@ -78,11 +78,9 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		
 		
 		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get("/webapp/global-variables/27").then().assertThat().statusCode(200).extract().response();
+			        when().get(vw_resources.variable()).then().assertThat().statusCode(200).and().header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
 		
-		
-						String ResposeString=res.asString();
-				        log.info("Voicewatch Respose of Variable: "+ ResposeString);
+								
 		                JsonPath js=reuseable.rawToJson(res);
 		               log.debug("Variable Respose: "+js.get());   
 
@@ -95,11 +93,9 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		
 		
 		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get("/webapp/tests").then().assertThat().statusCode(200).extract().response();
+			        when().get(vw_resources.Tests()).then().assertThat().statusCode(200).and().header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
 		
 		
-						String ResposeString=res.asString();
-				        log.info("Voicewatch Respose of Tests: "+ ResposeString);
 		                JsonPath js=reuseable.rawToJson(res);
 		               log.debug("Tests Respose: "+js.get());   
 }
@@ -114,13 +110,12 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 			        when().get("/tests/2041/execute").then().assertThat().statusCode(200).extract().response();
 		
 		
-						String ResposeString=res.asString();
-				        log.info("Voicewatch Respose of Tests_Execute: "+ ResposeString);
-		                JsonPath js=reuseable.rawToJson(res);
-		               log.debug("Tests Execute Respose: "+js.get());   
+		
+        JsonPath js=reuseable.rawToJson(res);
+       log.debug("Tests Respose: "+js.get());   
 	
-	}	*/
-
+	}	
+*/
 	@Test(priority=6)
 	public void VW_scripts() {
 		
@@ -129,11 +124,9 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		
 		
 		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get("/webapp/scripts").then().assertThat().statusCode(200).extract().response();
-		
-		
-						String ResposeString=res.asString();
-				        log.info("Voicewatch Respose of Scripts: "+ ResposeString);
+			        when().get(vw_resources.Scripts()).then().assertThat().statusCode(200).and().header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
+				
+					
 		                JsonPath js=reuseable.rawToJson(res);
 		               log.debug("Script Respose: "+js.get());   
 }
@@ -146,11 +139,8 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		
 		
 		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get("/webapp/scripts/summary").then().assertThat().statusCode(200).extract().response();
+			        when().get(vw_resources.Scripts_summary()).then().assertThat().statusCode(200).and().header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
 		
-		
-						String ResposeString=res.asString();
-				        log.info("Voicewatch Respose of script summary: "+ ResposeString);
 		                JsonPath js=reuseable.rawToJson(res);
 		               log.debug("script summary: "+js.get());   
 	
@@ -164,12 +154,9 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		
 		
 		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get("/webapp/user-info").then().assertThat().statusCode(200).extract().response();
+			        when().get(vw_resources.User_info()).then().assertThat().statusCode(200).and().header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
 		
-		
-						String ResposeString=res.asString();
-				        log.info("Voicewatch Respose of User Info: "+ ResposeString);
-		                JsonPath js=reuseable.rawToJson(res);
+				                JsonPath js=reuseable.rawToJson(res);
 		               log.debug("User Respose: "+js.get());   
 }  
 
@@ -181,12 +168,9 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		
 		
 		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get("/webapp/clients").then().assertThat().statusCode(200).extract().response();
+			        when().get(vw_resources.Clients()).then().assertThat().statusCode(200).and().header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
 		
-		
-						String ResposeString=res.asString();
-				        log.info("Voicewatch Respose of clients Info: "+ ResposeString);
-		                JsonPath js=reuseable.rawToJson(res);
+		               JsonPath js=reuseable.rawToJson(res);
 		               log.debug("clients Respose: "+js.get());   
 }  
 	
@@ -198,11 +182,8 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		
 		
 		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get("/webapp/partners").then().assertThat().statusCode(200).extract().response();
+			        when().get(vw_resources.Patners()).then().assertThat().statusCode(200).and().header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
 		
-		
-						String ResposeString=res.asString();
-				        log.info("Voicewatch Respose of partners Info: "+ ResposeString);
 		                JsonPath js=reuseable.rawToJson(res);
 		               log.debug("partners Respose: "+js.get());   
 }  
@@ -215,11 +196,8 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		
 		
 		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get("/webapp/users/admin/notifications").then().assertThat().statusCode(200).extract().response();
+			        when().get(vw_resources.Profiles()).then().assertThat().statusCode(200).and().header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
 		
-		
-						String ResposeString=res.asString();
-				        log.info("Voicewatch Respose of Profile details of User: "+ ResposeString);
 		                JsonPath js=reuseable.rawToJson(res);
 		               log.debug("Profile Respose: "+js.get());   
 }  
@@ -231,13 +209,10 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		
 		
 		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get("/webapp/clients/-2/info").then().assertThat().statusCode(200).extract().response();
+			        when().get(vw_resources.Client_Details()).then().assertThat().statusCode(200).header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
 		
-		
-						String ResposeString=res.asString();
-				        log.info("Voicewatch Respose of Clients details from dropdown: "+ ResposeString);
 		                JsonPath js=reuseable.rawToJson(res);
-		               log.debug("Clients deatils Respose: "+js.get());   
+		               log.debug("Voicewatch Respose of Clients details from dropdown: "+js.get());   
 	
 	}	
 	
@@ -249,13 +224,10 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		
 		
 		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get("/webapp/hammer-groups").then().assertThat().statusCode(200).extract().response();
+			        when().get(vw_resources.Hammer_Groups()).then().assertThat().statusCode(200).header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
 		
-		
-						String ResposeString=res.asString();
-				        log.info("Voicewatch Respose of Hammer group details: "+ ResposeString);
 		                JsonPath js=reuseable.rawToJson(res);
-		               log.debug("Hammer deatils Respose: "+js.get());   
+		               log.debug("Voicewatch Respose of Hammer group details: "+js.get());   
 	
 	}	
 	
@@ -267,13 +239,10 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		
 		
 		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get("/webapp/tags").then().assertThat().statusCode(200).extract().response();
+			        when().get(vw_resources.Tags()).then().assertThat().statusCode(200).header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
 		
-		
-						String ResposeString=res.asString();
-				        log.info("Voicewatch Respose of Tags details: "+ ResposeString);
 		                JsonPath js=reuseable.rawToJson(res);
-		               log.debug("Tag Respose: "+js.get());   
+		               log.debug("Voicewatch Respose of Tags: "+js.get());   
 	
 	}	
 	
@@ -285,12 +254,10 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		
 		
 		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get("/webapp/notifications").then().assertThat().statusCode(200).extract().response();
+			        when().get(vw_resources.Notification()).then().assertThat().statusCode(200).header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
 		
 		
-						String ResposeString=res.asString();
-				        log.info("Voicewatch Respose of Notification details: "+ ResposeString);
-		                JsonPath js=reuseable.rawToJson(res);
+				       JsonPath js=reuseable.rawToJson(res);
 		               log.debug("Notification Respose: "+js.get());   
 	
 	}	
@@ -304,13 +271,10 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		
 		
 		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get("/webapp/hammer-labels").then().assertThat().statusCode(200).extract().response();
+			        when().get(vw_resources.Hammer_labels()).then().assertThat().statusCode(200).header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
 		
-		
-						String ResposeString=res.asString();
-				        log.info("Voicewatch Respose of hammer labels details: "+ ResposeString);
 		                JsonPath js=reuseable.rawToJson(res);
-		               log.debug("Notification Respose: "+js.get());   
+		               log.debug("Voicewatch Respose of hammer labels details: "+js.get());   
 	
 	}	
 	
@@ -322,13 +286,10 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		
 		
 		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get("/webapp/admin-dashboard/summary").then().assertThat().statusCode(200).extract().response();
+			        when().get(vw_resources.admin()).then().assertThat().statusCode(200).header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
 		
-		
-						String ResposeString=res.asString();
-				        log.info("Voicewatch Respose of Admin Dashboard summary: "+ ResposeString);
 		                JsonPath js=reuseable.rawToJson(res);
-		               log.debug("Dashboard Summary: "+js.get());   
+		               log.debug("Voicewatch Respose of Admin Dashboard summary: "+js.get());   
 	
 	}	
 	
@@ -340,13 +301,11 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		
 		
 		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get("/webapp/admin-dashboard/details").then().assertThat().statusCode(200).extract().response();
+			        when().get(vw_resources.admin_dashboard()).then().assertThat().statusCode(200).header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
 		
 		
-						String ResposeString=res.asString();
-				        log.info("Voicewatch Respose of Admin Dashboard Details: "+ ResposeString);
-		                JsonPath js=reuseable.rawToJson(res);
-		               log.debug("Admin dashboard details: "+js.get());   
+						JsonPath js=reuseable.rawToJson(res);
+		               log.debug("Voicewatch Respose of Admin Dashboard Details: "+js.get());   
 	
 	}	
 	

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="120.192" tests="19" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="124.427" tests="18" errors="0" skipped="0" failures="2">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\hsingh\AppData\Local\Temp\surefire283283433689495625\surefirebooter1685370981514217464.jar C:\Users\hsingh\AppData\Local\Temp\surefire283283433689495625 2019-10-09T20-36-59_660-jvmRun1 surefire4019919650199314922tmp surefire_02010542056745025010tmp"/>
+    <property name="sun.java.command" value="C:\Users\hsingh\AppData\Local\Temp\surefire8279796878890017147\surefirebooter5884709957899179179.jar C:\Users\hsingh\AppData\Local\Temp\surefire8279796878890017147 2019-10-12T12-16-11_080-jvmRun1 surefire2737976443563897773tmp surefire_03975347876010368132tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\hsingh\Frameworks\RestAssured_API\target\test-classes;C:\Users\hsingh\Frameworks\RestAssured_API\target\classes;C:\Users\hsingh\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\hsingh\.m2\repository\org\apache\httpcomponents\httpclient\4.5.1\httpclient-4.5.1.jar;C:\Users\hsingh\.m2\repository\org\apache\httpcomponents\httpcore\4.4.3\httpcore-4.4.3.jar;C:\Users\hsingh\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\hsingh\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\hsingh\.m2\repository\com\aventstack\extentreports\3.1.5\extentreports-3.1.5.jar;C:\Users\hsingh\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\hsingh\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\hsingh\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\hsingh\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\hsingh\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\hsingh\.m2\repository\org\jsoup\jsoup\1.9.2\jsoup-1.9.2.jar;C:\Users\hsingh\.m2\repository\com\google\code\gson\gson\2.8.0\gson-2.8.0.jar;C:\Users\hsingh\.m2\repository\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\Users\hsingh\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\hsingh\.m2\repository\org\apache\poi\poi-ooxml\3.17\poi-ooxml-3.17.jar;C:\Users\hsingh\.m2\repository\org\apache\poi\poi-ooxml-schemas\3.17\poi-ooxml-schemas-3.17.jar;C:\Users\hsingh\.m2\repository\org\apache\xmlbeans\xmlbeans\2.6.0\xmlbeans-2.6.0.jar;C:\Users\hsingh\.m2\repository\stax\stax-api\1.0.1\stax-api-1.0.1.jar;C:\Users\hsingh\.m2\repository\com\github\virtuald\curvesapi\1.04\curvesapi-1.04.jar;C:\Users\hsingh\.m2\repository\org\apache\poi\poi\3.17\poi-3.17.jar;C:\Users\hsingh\.m2\repository\org\apache\commons\commons-collections4\4.1\commons-collections4-4.1.jar;C:\Users\hsingh\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\hsingh\.m2\repository\io\rest-assured\rest-assured\4.1.0\rest-assured-4.1.0.jar;C:\Users\hsingh\.m2\repository\org\codehaus\groovy\groovy\2.5.6\groovy-2.5.6.jar;C:\Users\hsingh\.m2\repository\org\codehaus\groovy\groovy-xml\2.5.6\groovy-xml-2.5.6.jar;C:\Users\hsingh\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\hsingh\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\hsingh\.m2\repository\io\rest-assured\json-path\4.0.0\json-path-4.0.0.jar;C:\Users\hsingh\.m2\repository\org\codehaus\groovy\groovy-json\2.5.6\groovy-json-2.5.6.jar;C:\Users\hsingh\.m2\repository\io\rest-assured\rest-assured-common\4.0.0\rest-assured-common-4.0.0.jar;C:\Users\hsingh\.m2\repository\io\rest-assured\xml-path\4.0.0\xml-path-4.0.0.jar;C:\Users\hsingh\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar;C:\Users\hsingh\.m2\repository\javax\xml\bind\jaxb-api\2.2.12\jaxb-api-2.2.12.jar;C:\Users\hsingh\.m2\repository\com\sun\xml\bind\jaxb-osgi\2.2.10\jaxb-osgi-2.2.10.jar;C:\Users\hsingh\.m2\repository\org\apache\sling\org.apache.sling.javax.activation\0.1.0\org.apache.sling.javax.activation-0.1.0.jar;C:\Users\hsingh\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\hsingh\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\hsingh\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\hsingh\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\hsingh\.m2\repository\io\rest-assured\json-schema-validator\4.0.0\json-schema-validator-4.0.0.jar;C:\Users\hsingh\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.10\json-schema-validator-2.2.10.jar;C:\Users\hsingh\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.10\json-schema-core-1.2.10.jar;C:\Users\hsingh\.m2\repository\com\github\java-json-tools\jackson-coreutils\1.9\jackson-coreutils-1.9.jar;C:\Users\hsingh\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.2.3\jackson-databind-2.2.3.jar;C:\Users\hsingh\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.2.3\jackson-annotations-2.2.3.jar;C:\Users\hsingh\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.2.3\jackson-core-2.2.3.jar;C:\Users\hsingh\.m2\repository\com\google\guava\guava\16.0.1\guava-16.0.1.jar;C:\Users\hsingh\.m2\repository\com\github\fge\msg-simple\1.1\msg-simple-1.1.jar;C:\Users\hsingh\.m2\repository\com\github\fge\btf\1.2\btf-1.2.jar;C:\Users\hsingh\.m2\repository\com\github\fge\uri-template\0.9\uri-template-0.9.jar;C:\Users\hsingh\.m2\repository\org\mozilla\rhino\1.7.7.1\rhino-1.7.7.1.jar;C:\Users\hsingh\.m2\repository\javax\mail\mailapi\1.4.3\mailapi-1.4.3.jar;C:\Users\hsingh\.m2\repository\joda-time\joda-time\2.9.7\joda-time-2.9.7.jar;C:\Users\hsingh\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.0.0\libphonenumber-8.0.0.jar;C:\Users\hsingh\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar;C:\Users\hsingh\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.3\jopt-simple-5.0.3.jar;C:\Users\hsingh\.m2\repository\org\hamcrest\hamcrest-core\2.1\hamcrest-core-2.1.jar;C:\Users\hsingh\.m2\repository\org\apache\logging\log4j\log4j-api\2.11.0\log4j-api-2.11.0.jar;C:\Users\hsingh\.m2\repository\org\apache\logging\log4j\log4j-core\2.11.0\log4j-core-2.11.0.jar;C:\Users\hsingh\.m2\repository\com\jcabi\jcabi-log\0.17.3\jcabi-log-0.17.3.jar;C:\Users\hsingh\.m2\repository\org\slf4j\slf4j-api\1.7.21\slf4j-api-1.7.21.jar;C:\Users\hsingh\.m2\repository\com\jcabi\jcabi-aspects\0.22.5\jcabi-aspects-0.22.5.jar;C:\Users\hsingh\.m2\repository\org\aspectj\aspectjrt\1.8.7\aspectjrt-1.8.7.jar;C:\Users\hsingh\.m2\repository\javax\validation\validation-api\1.1.0.Final\validation-api-1.1.0.Final.jar;C:\Users\hsingh\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.22.0\surefire-testng-utils-2.22.0.jar;C:\Users\hsingh\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.22.0\surefire-grouper-2.22.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\hsingh"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\hsingh\AppData\Local\Temp\surefire283283433689495625\surefirebooter1685370981514217464.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\hsingh\AppData\Local\Temp\surefire8279796878890017147\surefirebooter5884709957899179179.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_171\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -52,7 +52,7 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\RSA SecurID Token Common;C:\Program Files\RSA SecurID Token Common;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\CheckPoint\Endpoint Security\Endpoint Common\bin;C:\Program Files\Java\jdk1.8.0_171\bin;C:\work\software\apache-maven-3.5.4\bin;C:\Program Files\Perforce\;C:\Program Files\PuTTY\;C:\Gradle\gradle-5.1.1\bin;C:\HashiCorp\Vagrant\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\strawberry\c\bin;C:\strawberry\perl\bin;C:\Users\hsingh\AppData\Local\Microsoft\WindowsApps;C:\Users\hsingh\AppData\Roaming\Dashlane\4.6.8.25848\bin\Firefox_Extension\{442718d9-475e-452a-b3e1-fb1ee16b8e9f}\components;C:\Users\hsingh\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;c:\Hammer\sysbin;c:\Hammer\bin;c:\Hammer\Tcl\bin;C:\Program Files (x86)\RSA SecurID Token Common;C:\Program Files\RSA SecurID Token Common;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\CheckPoint\Endpoint Security\Endpoint Common\bin;C:\Program Files\Java\jdk1.8.0_171\bin;C:\work\software\apache-maven-3.5.4\bin;C:\Program Files\Perforce\;C:\Program Files\PuTTY\;C:\Gradle\gradle-5.1.1\bin;C:\HashiCorp\Vagrant\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\strawberry\c\bin;C:\strawberry\perl\bin;C:\Program Files (x86)\Empirix\Hammer CallMaster\bin;C:\Users\hsingh\AppData\Local\Microsoft\WindowsApps;C:\Users\hsingh\AppData\Roaming\Dashlane\4.6.8.25848\bin\Firefox_Extension\{442718d9-475e-452a-b3e1-fb1ee16b8e9f}\components;C:\Users\hsingh\AppData\Local\Programs\Microsoft VS Code\bin;."/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.version" value="25.171-b11"/>
@@ -60,23 +60,119 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="vw_Get_Test_Result" classname="voicewatchAPI.voicewatch_Get_API" time="9.238"/>
-  <testcase name="vw_Get_vw_dashboard" classname="voicewatchAPI.voicewatch_Get_API" time="7.002"/>
-  <testcase name="VW_Variable" classname="voicewatchAPI.voicewatch_Get_API" time="6.791"/>
-  <testcase name="VW_Tests" classname="voicewatchAPI.voicewatch_Get_API" time="6.815"/>
-  <testcase name="VW_scripts" classname="voicewatchAPI.voicewatch_Get_API" time="9.348"/>
-  <testcase name="script_summary" classname="voicewatchAPI.voicewatch_Get_API" time="5.221"/>
-  <testcase name="VW_user_info" classname="voicewatchAPI.voicewatch_Get_API" time="5.072"/>
-  <testcase name="clients" classname="voicewatchAPI.voicewatch_Get_API" time="7.7"/>
-  <testcase name="parteners" classname="voicewatchAPI.voicewatch_Get_API" time="4.926"/>
-  <testcase name="profiles" classname="voicewatchAPI.voicewatch_Get_API" time="5.882"/>
-  <testcase name="clients_details" classname="voicewatchAPI.voicewatch_Get_API" time="4.877"/>
-  <testcase name="hammer_details" classname="voicewatchAPI.voicewatch_Get_API" time="5.253"/>
-  <testcase name="tags" classname="voicewatchAPI.voicewatch_Get_API" time="5.481"/>
-  <testcase name="notification" classname="voicewatchAPI.voicewatch_Get_API" time="5.949"/>
-  <testcase name="hammer_labels" classname="voicewatchAPI.voicewatch_Get_API" time="4.984"/>
-  <testcase name="admin" classname="voicewatchAPI.voicewatch_Get_API" time="6.085"/>
-  <testcase name="admin_dashboard" classname="voicewatchAPI.voicewatch_Get_API" time="6.278"/>
-  <testcase name="vw_Get_Test_Result" classname="voicewatchAPI.voicewatch_Post_API" time="5.943"/>
-  <testcase name="vw_Get_vw_dashboard" classname="voicewatchAPI.voicewatch_Post_API" time="5.888"/>
+  <testcase name="vw_Get_Test_Result" classname="voicewatchAPI.voicewatch_Get_API" time="8.229"/>
+  <testcase name="vw_Get_vw_dashboard" classname="voicewatchAPI.voicewatch_Get_API" time="6.472"/>
+  <testcase name="VW_Variable" classname="voicewatchAPI.voicewatch_Get_API" time="7.18"/>
+  <testcase name="VW_Tests" classname="voicewatchAPI.voicewatch_Get_API" time="11.689"/>
+  <testcase name="VW_scripts" classname="voicewatchAPI.voicewatch_Get_API" time="7.706"/>
+  <testcase name="script_summary" classname="voicewatchAPI.voicewatch_Get_API" time="5.514"/>
+  <testcase name="VW_user_info" classname="voicewatchAPI.voicewatch_Get_API" time="6.556"/>
+  <testcase name="clients" classname="voicewatchAPI.voicewatch_Get_API" time="6.903"/>
+  <testcase name="parteners" classname="voicewatchAPI.voicewatch_Get_API" time="6.017"/>
+  <testcase name="profiles" classname="voicewatchAPI.voicewatch_Get_API" time="7.228"/>
+  <testcase name="clients_details" classname="voicewatchAPI.voicewatch_Get_API" time="5.895"/>
+  <testcase name="hammer_details" classname="voicewatchAPI.voicewatch_Get_API" time="6.578"/>
+  <testcase name="tags" classname="voicewatchAPI.voicewatch_Get_API" time="6.261"/>
+  <testcase name="notification" classname="voicewatchAPI.voicewatch_Get_API" time="5.806"/>
+  <testcase name="hammer_labels" classname="voicewatchAPI.voicewatch_Get_API" time="5.537">
+    <failure message="1 expectation failed.&#10;Expected header &quot;X-Content-Type-Options&quot; was not &quot;nosniff&quot;, was &quot;null&quot;. Headers are:&#10;Set-Cookie=JSESSIONID=8C2B921E3C5CB4B0A86905075585FBEB; Path=/; Secure; HttpOnly&#10;Accept-Ranges=bytes&#10;ETag=W/&quot;18475-1570681260000&quot;&#10;Last-Modified=Thu, 10 Oct 2019 04:21:00 GMT&#10;Content-Type=text/html&#10;Content-Length=18475&#10;Date=Sat, 12 Oct 2019 06:44:01 GMT&#10;" type="java.lang.AssertionError">java.lang.AssertionError: 
+1 expectation failed.
+Expected header "X-Content-Type-Options" was not "nosniff", was "null". Headers are:
+Set-Cookie=JSESSIONID=8C2B921E3C5CB4B0A86905075585FBEB; Path=/; Secure; HttpOnly
+Accept-Ranges=bytes
+ETag=W/"18475-1570681260000"
+Last-Modified=Thu, 10 Oct 2019 04:21:00 GMT
+Content-Type=text/html
+Content-Length=18475
+Date=Sat, 12 Oct 2019 06:44:01 GMT
+
+	at voicewatchAPI.voicewatch_Get_API.hammer_labels(voicewatch_Get_API.java:274)
+</failure>
+    <system-out><![CDATA[
+Test Case notification Passed
+
+=========================================
+[INFO ] 2019-10-12 12:17:51,018 voicewatch_Get_API.getTokenID() - Host infomation OpenAM server:https://os-2k16-vm333.empirix.com
+Request method:	POST
+Request URI:	https://os-2k16-vm333.empirix.com/openam/json/authenticate
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-OpenAM-Username=admin
+				X-OpenAM-Password=password
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+[INFO ] 2019-10-12 12:17:53,219 voicewatch_Get_API.getTokenID() - Auth-Respose: {"tokenId":"AQIC5wM2LY4SfczqV2TuV6INt68FS3XPoLcrhqs_ezqCqt0.*AAJTSQACMDEAAlNLABI0NzI4MDI3NjEwNTg4MDAxMTE.*","successUrl":"/openam/console"}
+Request method:	GET
+Request URI:	https://os-2k16-vm332.empirix.com/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=iPlanetDirectoryPro=AQIC5wM2LY4SfczqV2TuV6INt68FS3XPoLcrhqs_ezqCqt0.*AAJTSQACMDEAAlNLABI0NzI4MDI3NjEwNTg4MDAxMTE.*
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+]]></system-out>
+  </testcase>
+  <testcase name="admin" classname="voicewatchAPI.voicewatch_Get_API" time="5.713"/>
+  <testcase name="admin_dashboard" classname="voicewatchAPI.voicewatch_Get_API" time="6.652"/>
+  <testcase name="vw_post_Tag" classname="voicewatchAPI.voicewatch_Post_API" time="6.911">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at voicewatchAPI.voicewatch_Post_API.vw_post_Tag(voicewatch_Post_API.java:56)
+</failure>
+    <system-out><![CDATA[
+Test Case admin_dashboard Passed
+
+=========================================
+
+ Test Get voicewatch_Get_Api Feature Completed
+=========================================
+
+ Test Post voicewatch_Post_Api Feature Started
+=========================================
+[INFO ] 2019-10-12 12:18:08,892 voicewatch_Post_API.vw_post_Tag() - Host infomation Webapp server: https://os-2k16-vm332.empirix.com
+[INFO ] 2019-10-12 12:18:08,892 voicewatch_Get_API.getTokenID() - Host infomation OpenAM server:https://os-2k16-vm333.empirix.com
+Request method:	POST
+Request URI:	https://os-2k16-vm333.empirix.com/openam/json/authenticate
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-OpenAM-Username=admin
+				X-OpenAM-Password=password
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+[INFO ] 2019-10-12 12:18:11,903 voicewatch_Get_API.getTokenID() - Auth-Respose: {"tokenId":"AQIC5wM2LY4SfcwTMkCkDrWpKoNfi7Cx0qzyfm05vgzh6-M.*AAJTSQACMDEAAlNLABM1MTY2MTQ4NjU4MzU0ODkyMjMx*","successUrl":"/openam/console"}
+Request method:	POST
+Request URI:	https://os-2k16-vm332.empirix.com/webapp/tags
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=iPlanetDirectoryPro=AQIC5wM2LY4SfcwTMkCkDrWpKoNfi7Cx0qzyfm05vgzh6-M.*AAJTSQACMDEAAlNLABM1MTY2MTQ4NjU4MzU0ODkyMjMx*
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "okaol56kll"
+}
+[DEBUG] 2019-10-12 12:18:15,903 voicewatch_Post_API.vw_post_Tag() - User Respose: null
+]]></system-out>
+  </testcase>
 </testsuite>

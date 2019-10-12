@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="resources.ExtentReporterNG"/>
-    <listener class-name="resources.listeners"/>
-  </listeners>
-  <test thread-count="5" name="Test Post voicewatch_Post_Api Feature(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="voicewatchAPI.voicewatch_Post_API">
+      <class name="voicewatchAPI.voicewatch_Get_API">
         <methods>
-          <include name="vw_post_Tag"/>
           <include name="getData"/>
+          <include name="VW_Test_Execute"/>
         </methods>
-      </class> <!-- voicewatchAPI.voicewatch_Post_API -->
+      </class> <!-- voicewatchAPI.voicewatch_Get_API -->
     </classes>
-  </test> <!-- Test Post voicewatch_Post_Api Feature(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
