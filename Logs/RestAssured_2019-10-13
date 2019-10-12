@@ -1,0 +1,17 @@
+[INFO ] 2019-10-13 00:45:38,431 voicewatch_Tag_END_API.vw_Add_Tag() - Host infomation Webapp server: https://os-2k16-vm332.empirix.com
+[INFO ] 2019-10-13 00:45:39,056 voicewatch_Get_API.getTokenID() - Host infomation OpenAM server:https://os-2k16-vm333.empirix.com
+[INFO ] 2019-10-13 00:45:41,983 voicewatch_Get_API.getTokenID() - Auth-Respose: {"tokenId":"AQIC5wM2LY4SfczChxK0ec-Pe1CHgPhUkT97VcwCSc50pC4.*AAJTSQACMDEAAlNLABQtOTAwNzkzNTg1NTIwNTAzMjk5MQ..*","successUrl":"/openam/console"}
+[DEBUG] 2019-10-13 00:45:46,097 voicewatch_Tag_END_API.vw_Add_Tag() - Added New Tag ID: 98
+[DEBUG] 2019-10-13 00:45:46,118 voicewatch_Tag_END_API.vw_Add_Tag() - Tag ID info: 98
+[INFO ] 2019-10-13 00:45:46,134 voicewatch_Get_API.getTokenID() - Host infomation OpenAM server:https://os-2k16-vm333.empirix.com
+[INFO ] 2019-10-13 00:45:48,319 voicewatch_Get_API.getTokenID() - Auth-Respose: {"tokenId":"AQIC5wM2LY4SfcwH5lxMGEHr_FBeZCJpqnB8sfiNkf-kIDA.*AAJTSQACMDEAAlNLABQtOTEwNDAwNjg3NDMzNjQ1MjY3Mg..*","successUrl":"/openam/console"}
+[DEBUG] 2019-10-13 00:45:51,744 voicewatch_Tag_END_API.vw_Add_Tag() - Get repose of Generated Tag ID of Voicewatch: 98
+[DEBUG] 2019-10-13 00:45:51,766 voicewatch_Tag_END_API.vw_Add_Tag() - Tag ID info: 98
+[DEBUG] 2019-10-13 00:45:51,770 voicewatch_Tag_END_API.vw_Add_Tag() - Post Tag ID: 98 and Get Tag ID: 98 is equal,So Test Case Pass successfully
+[INFO ] 2019-10-13 00:45:51,770 voicewatch_Get_API.getTokenID() - Host infomation OpenAM server:https://os-2k16-vm333.empirix.com
+[INFO ] 2019-10-13 00:45:53,932 voicewatch_Get_API.getTokenID() - Auth-Respose: {"tokenId":"AQIC5wM2LY4SfcyID_xihK9hsctULALWICiqeajvKoeHYmk.*AAJTSQACMDEAAlNLABQtMzQxOTI3OTM4NzcyMzk5NjkwNQ..*","successUrl":"/openam/console"}
+[DEBUG] 2019-10-13 00:45:57,217 voicewatch_Tag_END_API.vw_Add_Tag() - Delete Tag id is: {id=Not Found}
+[INFO ] 2019-10-13 00:45:57,223 voicewatch_Get_API.getTokenID() - Host infomation OpenAM server:https://os-2k16-vm333.empirix.com
+[INFO ] 2019-10-13 00:45:59,640 voicewatch_Get_API.getTokenID() - Auth-Respose: {"tokenId":"AQIC5wM2LY4Sfcyl0zTuhtQoHty-345J1FFy5dEFMc3TDZI.*AAJTSQACMDEAAlNLABQtNzkzMzUzMTgyMjYwMzI0NjM5NQ..*","successUrl":"/openam/console"}
+[INFO ] 2019-10-13 00:46:18,024 voicewatch_Tag_END_API.vw_Add_Tag() - Again Get response is: null
+[DEBUG] 2019-10-13 00:46:18,024 voicewatch_Tag_END_API.vw_Add_Tag() - Created tag id still avaiable

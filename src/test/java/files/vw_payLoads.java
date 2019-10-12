@@ -3,25 +3,22 @@ package files;
 public class vw_payLoads {
 	
 	
-	public static String getPostData04_1()
+	public static String getClinet(String ClientName)
 	{
-		String b="{"+
-		    "\"location\":{"+
-		        "\"lat\" : -38.383494,"+
-		        "\"lng\" : 33.427362"+
-		    "},"+
-		    "\"accuracy\":50,"+
-		    "\"name\":\"Frontline house\","+
-		    "\"phone_number\":\"(+91) 983 893 3937\","+
-		    "\"address\" : \"29, side layout, cohen 09\","+
-		    "\"types\": [\"shoe_park\",\"shop\"],"+
-		    "\"website\" : \"http://google.com/\","+
-		    "\"language\" : \"French-IN\""+
-		"}";
+		String b="{\"name\":\""+ClientName+"\",\"description\":\"null\",\"subscription_start_date\":1570536000,\"subscription_end_date\":1570615200,\"max_tests_allowed\":0,\"max_qa_tests\":0,\"max_load_tests\":0,\"max_vw_channels\":0,\"max_qa_channels\":0,\"max_load_channels\":0,\"min_test_schedule_period_in_minutes\":15,\"partner_id\":-1,\"partner_name\":\"\",\"Client\":\"\",\"partner_end_tied\":0,\"partner_schedule_tied\":0}";
 		return b;
 		
 			
 	}
+	
+	public static String tag(String tagname)
+	{
+		String pay="{\"name\": \""+tagname+"\"}";
+		return pay;
+		
+			
+	}
+	
 
 	public static String getPostData04_2()
 	{

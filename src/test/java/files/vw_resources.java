@@ -98,6 +98,12 @@ public class vw_resources {
 		return res;
 		
 	}
+ public static String Tags_Path() {
+		
+		String res="/webapp/tags/{id}";			
+		return res;
+		
+	}
  public static String Notification() {
 		
 		String res="/webapp/notifications";			

@@ -13,6 +13,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import files.reuseable;
+import files.vw_header;
 import files.vw_resources;
 import files.vw_reuseable;
 import io.restassured.RestAssured;
@@ -42,14 +43,13 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
 			
 		
-		            Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get(vw_resources.Test_Results()).then().assertThat().statusCode(200).and().header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
-		            
-		            String ResposeString=res.asString();
-                    log.info("Test Result-Respose: "+ ResposeString);
-		
-		            JsonPath js=vw_reuseable.rawToJson(res);
-		            log.debug("final result of Tet Result is: " +js.get());                            	               
+		Response res= 
+		given().log().all().relaxedHTTPSValidation().header(vw_header.Content_Type(), vw_header.content_Type_value()).header(vw_header.cookie(), vw_header.cookie_value()+reuseable.getTokenID()).
+		when().get(vw_resources.Test_Results()).
+		then().assertThat().statusCode(200).and().header(vw_header.Content_Type_Option(),vw_header.Content_Type_Option_value()).and().header(vw_header.Content_Type(),vw_header.content_Type_value()).extract().response();
+		     		
+		JsonPath js=vw_reuseable.rawToJson(res);
+		log.debug("final result of Tet Result is: " +js.get());                            	               
 		                                
 	}
 
@@ -61,8 +61,10 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
 		
 		
-		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get(vw_resources.dashboard()).then().assertThat().statusCode(200).and().header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
+		Response res= 
+		given().log().all().relaxedHTTPSValidation().header(vw_header.Content_Type(), vw_header.content_Type_value()).header(vw_header.cookie(), vw_header.cookie_value()+reuseable.getTokenID()).
+		when().get(vw_resources.dashboard()).
+		then().assertThat().statusCode(200).and().header(vw_header.Content_Type_Option(),vw_header.Content_Type_Option_value()).and().header(vw_header.Content_Type(),vw_header.content_Type_value()).extract().response();
 		
 							
 		               JsonPath js=vw_reuseable.rawToJson(res);
@@ -77,8 +79,10 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
 		
 		
-		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get(vw_resources.variable()).then().assertThat().statusCode(200).and().header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
+		Response res= 
+		given().log().all().relaxedHTTPSValidation().header(vw_header.Content_Type(), vw_header.content_Type_value()).header(vw_header.cookie(), vw_header.cookie_value()+reuseable.getTokenID()).
+		when().get(vw_resources.variable()).
+		then().assertThat().statusCode(200).and().header(vw_header.Content_Type_Option(),vw_header.Content_Type_Option_value()).and().header(vw_header.Content_Type(),vw_header.content_Type_value()).extract().response();
 		
 								
 		                JsonPath js=reuseable.rawToJson(res);
@@ -93,8 +97,10 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
 		
 		
-		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get(vw_resources.Tests()).then().assertThat().statusCode(200).and().header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
+		Response res= 
+		given().log().all().relaxedHTTPSValidation().header(vw_header.Content_Type(), vw_header.content_Type_value()).header(vw_header.cookie(), vw_header.cookie_value()+reuseable.getTokenID()).
+		when().get(vw_resources.Tests()).
+		then().assertThat().statusCode(200).and().header(vw_header.Content_Type_Option(),vw_header.Content_Type_Option_value()).and().header(vw_header.Content_Type(),vw_header.content_Type_value()).extract().response();
 		
 		
 		                JsonPath js=reuseable.rawToJson(res);
@@ -108,16 +114,16 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
 		
 		
-		Response res= given().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
+		Response res= given().relaxedHTTPSValidation().header(vw_header.content(), vw_header.content_value()).header(vw_header.cookie(), vw_header.cookie_value()+reuseable.getTokenID()).
 			        when().get("/tests/2041/execute").then().assertThat().statusCode(200).extract().response();
 		
 		
 		
         JsonPath js=reuseable.rawToJson(res);
-       log.debug("Tests Respose: "+js.get());   
+       log.debug("Tests Execute: "+js.get());   
 	
-	}	
-*/
+	}	*/
+
 	@Test(priority=6)
 	public void VW_scripts() {
 		
@@ -126,8 +132,10 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
 		
 		
-		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get(vw_resources.Scripts()).then().assertThat().statusCode(200).and().header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
+		Response res= 
+		given().log().all().relaxedHTTPSValidation().header(vw_header.Content_Type(), vw_header.content_Type_value()).header(vw_header.cookie(), vw_header.cookie_value()+reuseable.getTokenID()).
+	    when().get(vw_resources.Scripts()).
+	    then().assertThat().statusCode(200).and().header(vw_header.Content_Type_Option(),vw_header.Content_Type_Option_value()).and().header(vw_header.Content_Type(),vw_header.content_Type_value()).extract().response();
 				
 					
 		                JsonPath js=reuseable.rawToJson(res);
@@ -142,10 +150,12 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
 		
 		
-		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get(vw_resources.Scripts_summary()).then().assertThat().statusCode(200).and().header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
+		Response res= 
+		given().log().all().relaxedHTTPSValidation().header(vw_header.Content_Type(), vw_header.content_Type_value()).header(vw_header.cookie(), vw_header.cookie_value()+reuseable.getTokenID()).
+		when().get(vw_resources.Scripts_summary()).
+		then().assertThat().statusCode(200).and().header(vw_header.Content_Type_Option(),vw_header.Content_Type_Option_value()).and().header(vw_header.Content_Type(),vw_header.content_Type_value()).extract().response();
 		
-		                JsonPath js=reuseable.rawToJson(res);
+		               JsonPath js=reuseable.rawToJson(res);
 		               log.debug("script summary: "+js.get());   
 	
 	}	
@@ -158,10 +168,11 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
 		
 		
-		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get(vw_resources.User_info()).then().assertThat().statusCode(200).and().header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
+		Response res= given().log().all().relaxedHTTPSValidation().header(vw_header.Content_Type(), vw_header.content_Type_value()).header(vw_header.cookie(), vw_header.cookie_value()+reuseable.getTokenID()).
+	    when().get(vw_resources.User_info()).
+	    then().assertThat().statusCode(200).and().header(vw_header.Content_Type_Option(),vw_header.Content_Type_Option_value()).and().header(vw_header.Content_Type(),vw_header.content_Type_value()).extract().response();
 		
-				                JsonPath js=reuseable.rawToJson(res);
+				       JsonPath js=reuseable.rawToJson(res);
 		               log.debug("User Respose: "+js.get());   
 }  
 
@@ -173,8 +184,10 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
 		
 		
-		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get(vw_resources.Clients()).then().assertThat().statusCode(200).and().header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
+		Response res= 
+		given().log().all().relaxedHTTPSValidation().header(vw_header.Content_Type(), vw_header.content_Type_value()).header(vw_header.cookie(), vw_header.cookie_value()+reuseable.getTokenID()).
+		when().get(vw_resources.Clients()).
+		then().assertThat().statusCode(200).and().header(vw_header.Content_Type_Option(),vw_header.Content_Type_Option_value()).and().header(vw_header.Content_Type(),vw_header.content_Type_value()).extract().response();
 		
 		               JsonPath js=reuseable.rawToJson(res);
 		               log.debug("clients Respose: "+js.get());   
@@ -188,8 +201,10 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
 		
 		
-		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get(vw_resources.Patners()).then().assertThat().statusCode(200).and().header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
+		Response res= 
+	    given().log().all().relaxedHTTPSValidation().header(vw_header.Content_Type(), vw_header.content_Type_value()).header(vw_header.cookie(), vw_header.cookie_value()+reuseable.getTokenID()).
+		when().get(vw_resources.Patners()).
+		then().assertThat().statusCode(200).and().header(vw_header.Content_Type_Option(),vw_header.Content_Type_Option_value()).and().header(vw_header.Content_Type(),vw_header.content_Type_value()).extract().response();
 		
 		                JsonPath js=reuseable.rawToJson(res);
 		               log.debug("partners Respose: "+js.get());   
@@ -203,8 +218,10 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
 		
 		
-		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get(vw_resources.Profiles()).then().assertThat().statusCode(200).and().header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
+		Response res= 
+		given().log().all().relaxedHTTPSValidation().header(vw_header.Content_Type(), vw_header.content_Type_value()).header(vw_header.cookie(), vw_header.cookie_value()+reuseable.getTokenID()).
+		when().get(vw_resources.Profiles()).
+		then().assertThat().statusCode(200).and().header(vw_header.Content_Type_Option(),vw_header.Content_Type_Option_value()).and().header(vw_header.Content_Type(),vw_header.content_Type_value()).extract().response();
 		
 		                JsonPath js=reuseable.rawToJson(res);
 		               log.debug("Profile Respose: "+js.get());   
@@ -217,8 +234,10 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
 		
 		
-		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get(vw_resources.Client_Details()).then().assertThat().statusCode(200).header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
+		Response res= 
+	    given().log().all().relaxedHTTPSValidation().header(vw_header.Content_Type(), vw_header.content_Type_value()).header(vw_header.cookie(), vw_header.cookie_value()+reuseable.getTokenID()).
+		when().get(vw_resources.Client_Details()).
+		then().assertThat().statusCode(200).header(vw_header.Content_Type_Option(),vw_header.Content_Type_Option_value()).and().header(vw_header.Content_Type(),vw_header.content_Type_value()).extract().response();
 		
 		                JsonPath js=reuseable.rawToJson(res);
 		               log.debug("Voicewatch Respose of Clients details from dropdown: "+js.get());   
@@ -233,8 +252,9 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
 		
 		
-		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get(vw_resources.Hammer_Groups()).then().assertThat().statusCode(200).header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
+		Response res= given().log().all().relaxedHTTPSValidation().header(vw_header.Content_Type(), vw_header.content_Type_value()).header(vw_header.cookie(), vw_header.cookie_value()+reuseable.getTokenID()).
+	    when().get(vw_resources.Hammer_Groups()).
+	    then().assertThat().statusCode(200).header("X-Content-Type-Options", "nosniff").and().contentType(vw_header.cookie_value()).extract().response();
 		
 		                JsonPath js=reuseable.rawToJson(res);
 		               log.debug("Voicewatch Respose of Hammer group details: "+js.get());   
@@ -249,8 +269,10 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
 		
 		
-		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get(vw_resources.Tags()).then().assertThat().statusCode(200).header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
+		Response res= 
+		given().log().all().relaxedHTTPSValidation().header(vw_header.Content_Type(), vw_header.content_Type_value()).header(vw_header.cookie(), vw_header.cookie_value()+reuseable.getTokenID()).
+	    when().get(vw_resources.Tags()).
+	    then().assertThat().statusCode(200).header("X-Content-Type-Options", "nosniff").and().contentType(vw_header.cookie_value()).extract().response();
 		
 		                JsonPath js=reuseable.rawToJson(res);
 		               log.debug("Voicewatch Respose of Tags: "+js.get());   
@@ -265,8 +287,10 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
 		
 		
-		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get(vw_resources.Notification()).then().assertThat().statusCode(200).header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
+		Response res= 
+		given().log().all().relaxedHTTPSValidation().header(vw_header.Content_Type(), vw_header.content_Type_value()).header(vw_header.cookie(), vw_header.cookie_value()+reuseable.getTokenID()).
+		when().get(vw_resources.Notification()).
+		then().assertThat().statusCode(200).header(vw_header.Content_Type_Option(),vw_header.Content_Type_Option_value()).and().header(vw_header.Content_Type(),vw_header.content_Type_value()).extract().response();
 		
 		
 				       JsonPath js=reuseable.rawToJson(res);
@@ -283,8 +307,10 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
 		
 		
-		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get(vw_resources.Hammer_labels()).then().assertThat().statusCode(200).header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
+		Response res= 
+	    given().log().all().relaxedHTTPSValidation().header(vw_header.Content_Type(), vw_header.content_Type_value()).header(vw_header.cookie(), vw_header.cookie_value()+reuseable.getTokenID()).
+		when().get(vw_resources.Hammer_labels()).
+		then().assertThat().statusCode(200).header(vw_header.Content_Type_Option(),vw_header.Content_Type_Option_value()).and().header(vw_header.Content_Type(),vw_header.content_Type_value()).extract().response();
 		
 		                JsonPath js=reuseable.rawToJson(res);
 		               log.debug("Voicewatch Respose of hammer labels details: "+js.get());   
@@ -298,8 +324,10 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		RestAssured.baseURI=prop.getProperty("webapp");
 		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));	
 		
-		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get(vw_resources.admin()).then().assertThat().statusCode(200).header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
+		Response res= 
+		given().log().all().relaxedHTTPSValidation().header(vw_header.Content_Type(), vw_header.content_Type_value()).header(vw_header.cookie(), vw_header.cookie_value()+reuseable.getTokenID()).
+		when().get(vw_resources.admin()).
+		then().assertThat().statusCode(200).header(vw_header.Content_Type_Option(),vw_header.Content_Type_Option_value()).and().header(vw_header.Content_Type(),vw_header.content_Type_value()).extract().response();
 		
 		                JsonPath js=reuseable.rawToJson(res);
 		               log.debug("Voicewatch Respose of Admin Dashboard summary: "+js.get());   
@@ -314,8 +342,10 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
 		
 		
-		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
-			        when().get(vw_resources.admin_dashboard()).then().assertThat().statusCode(200).header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
+		Response res= 
+		given().log().all().relaxedHTTPSValidation().header(vw_header.Content_Type(), vw_header.content_Type_value()).header(vw_header.cookie(), vw_header.cookie_value()+reuseable.getTokenID()).
+	    when().get(vw_resources.admin_dashboard()).
+	    then().assertThat().statusCode(200).header(vw_header.Content_Type_Option(),vw_header.Content_Type_Option_value()).and().header(vw_header.Content_Type(),vw_header.content_Type_value()).extract().response();
 		
 		
 						JsonPath js=reuseable.rawToJson(res);
@@ -330,7 +360,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		RestAssured.baseURI=prop.getProperty("webapp");
 		
 		
-		Response res= given().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
+		Response res= given().relaxedHTTPSValidation().header(vw_header.content(), vw_header.content_value()).header(vw_header.cookie(), vw_header.cookie_value()+reuseable.getTokenID()).
 			        when().get("/webapp/triggered-alerts").then().assertThat().statusCode(200).extract().response();
 		
 		

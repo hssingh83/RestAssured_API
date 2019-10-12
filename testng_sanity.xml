@@ -16,6 +16,14 @@
      </classes> 
      </test>
      
+      <test  name="Test ETE ()Post/Get/Delet/Get of Tag in voicewatch">
+    <classes>
+     
+      <class name="voicewatchAPI.voicewatch_Tag_ETE_API"/>
+      
+     </classes> 
+     </test>
+     
          
   
      
