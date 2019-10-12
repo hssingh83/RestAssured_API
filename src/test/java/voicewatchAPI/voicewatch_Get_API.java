@@ -39,10 +39,8 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 	public void vw_Get_Test_Result() {
 		
 		RestAssured.baseURI=prop.getProperty("webapp");
-		log.info("Host infomation Webapp server: "+prop.getProperty("webapp"));
-		
-	//	RestAssured.baseURI="https://os-2k16-vm332.empirix.com";
-		
+		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
+			
 		
 		            Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
 			        when().get(vw_resources.Test_Results()).then().assertThat().statusCode(200).and().header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
@@ -60,6 +58,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		
 		
 		RestAssured.baseURI=prop.getProperty("webapp");
+		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
 		
 		
 		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
@@ -75,6 +74,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		
 		
 		RestAssured.baseURI=prop.getProperty("webapp");
+		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
 		
 		
 		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
@@ -90,6 +90,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		
 		
 		RestAssured.baseURI=prop.getProperty("webapp");
+		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
 		
 		
 		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
@@ -104,6 +105,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		
 		
 		RestAssured.baseURI=prop.getProperty("webapp");
+		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
 		
 		
 		Response res= given().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
@@ -121,6 +123,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		
 		
 		RestAssured.baseURI=prop.getProperty("webapp");
+		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
 		
 		
 		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
@@ -136,6 +139,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		
 		
 		RestAssured.baseURI=prop.getProperty("webapp");
+		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
 		
 		
 		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
@@ -151,6 +155,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		
 		
 		RestAssured.baseURI=prop.getProperty("webapp");
+		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
 		
 		
 		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
@@ -165,6 +170,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		
 		
 		RestAssured.baseURI=prop.getProperty("webapp");
+		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
 		
 		
 		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
@@ -179,6 +185,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		
 		
 		RestAssured.baseURI=prop.getProperty("webapp");
+		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
 		
 		
 		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
@@ -193,6 +200,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		
 		
 		RestAssured.baseURI=prop.getProperty("webapp");
+		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
 		
 		
 		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
@@ -206,6 +214,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		
 		
 		RestAssured.baseURI=prop.getProperty("webapp");
+		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
 		
 		
 		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
@@ -221,6 +230,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		
 		
 		RestAssured.baseURI=prop.getProperty("webapp");
+		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
 		
 		
 		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
@@ -236,6 +246,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		
 		
 		RestAssured.baseURI=prop.getProperty("webapp");
+		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
 		
 		
 		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
@@ -251,6 +262,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		
 		
 		RestAssured.baseURI=prop.getProperty("webapp");
+		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
 		
 		
 		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
@@ -268,6 +280,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		
 		
 		RestAssured.baseURI=prop.getProperty("webapp");
+		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
 		
 		
 		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
@@ -283,7 +296,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		
 		
 		RestAssured.baseURI=prop.getProperty("webapp");
-		
+		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));	
 		
 		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).
 			        when().get(vw_resources.admin()).then().assertThat().statusCode(200).header("X-Content-Type-Options", "nosniff").and().contentType("application/json").extract().response();
@@ -298,6 +311,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		
 		
 		RestAssured.baseURI=prop.getProperty("webapp");
+		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
 		
 		
 		Response res= given().log().all().relaxedHTTPSValidation().header("Content-Type","application/json").header("Cookie", "iPlanetDirectoryPro="+reuseable.getTokenID()).

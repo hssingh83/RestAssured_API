@@ -24,13 +24,18 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 	
 	
 
+
 	
-	
-	public static String getTokenID() {
+	public static String getTokenID() throws IOException {
 		
-	RestAssured.baseURI="https://os-2k16-vm333.empirix.com";
+		Properties prop=new Properties();
+		FileInputStream fis=new FileInputStream("C:\\Users\\hsingh\\Frameworks\\RestAssured_API\\src\\test\\java\\files\\data.properties");
+		prop.load(fis);
+		RestAssured.baseURI=prop.getProperty("openam");
+		
+//	RestAssured.baseURI="https://os-2k16-vm333.empirix.com";
 	
-	log.info("Host infomation OpenAM server:https://os-2k16-vm333.empirix.com");
+	log.info("Host infomation of aauthentication OpenAM server: " +prop.getProperty("openam"));
 	
 		
   

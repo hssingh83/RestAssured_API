@@ -1,22 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 18, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 124.427 s <<< FAILURE! - in TestSuite
-hammer_labels(voicewatchAPI.voicewatch_Get_API)  Time elapsed: 5.537 s  <<< FAILURE!
-java.lang.AssertionError: 
-1 expectation failed.
-Expected header "X-Content-Type-Options" was not "nosniff", was "null". Headers are:
-Set-Cookie=JSESSIONID=8C2B921E3C5CB4B0A86905075585FBEB; Path=/; Secure; HttpOnly
-Accept-Ranges=bytes
-ETag=W/"18475-1570681260000"
-Last-Modified=Thu, 10 Oct 2019 04:21:00 GMT
-Content-Type=text/html
-Content-Length=18475
-Date=Sat, 12 Oct 2019 06:44:01 GMT
-
-	at voicewatchAPI.voicewatch_Get_API.hammer_labels(voicewatch_Get_API.java:274)
-
-vw_post_Tag(voicewatchAPI.voicewatch_Post_API)  Time elapsed: 6.911 s  <<< FAILURE!
+Tests run: 18, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 121.438 s <<< FAILURE! - in TestSuite
+vw_post_Tag(voicewatchAPI.voicewatch_Post_API)  Time elapsed: 6.113 s  <<< FAILURE!
 java.lang.NullPointerException
 	at voicewatchAPI.voicewatch_Post_API.vw_post_Tag(voicewatch_Post_API.java:56)
 

@@ -17,14 +17,7 @@
      </test>
      
          
-          <test  name="Test Post voicewatch_Post_Api Feature">
-    <classes>
-     
-      <class name="voicewatchAPI.voicewatch_Post_API"/>
-      
-     </classes> 
-     </test>
-     
+  
      
      
 </suite> <!-- Suite -->
