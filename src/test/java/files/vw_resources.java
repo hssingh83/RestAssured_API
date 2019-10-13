@@ -58,8 +58,17 @@ public class vw_resources {
 		
 	}
  public static String Clients() {
+
 		
 		String res="/webapp/clients";		
+		
+		return res;
+		
+	}
+ public static String Clients_Path() {
+
+		
+		String res="/webapp/clients/{id}";		
 		
 		return res;
 		
@@ -67,6 +76,13 @@ public class vw_resources {
  public static String Patners() {
 		
 		String res="/webapp/partners";		
+		
+		return res;
+		
+	}
+ public static String Patners_Path() {
+		
+		String res="/webapp/partners/{id}";		
 		
 		return res;
 		
@@ -126,5 +142,31 @@ public static String admin_dashboard() {
 	return res;		
 }
 
- 
+public static String hammers() {
+	
+	String res="/webapp/hammers";			
+	return res;		
+}
+public static String databanks() {
+	
+	String res="webapp/databanks";			
+	return res;		
+}
+public static String applications() {
+	
+	String res="webapp/applications";			
+	return res;		
+}
+public static String channel_groups() {
+	
+	String res="webapp/channel-groups";			
+	return res;		
+}
+public static String email_temp() {
+	
+	String res="webapp/email-templates";			
+	return res;		
+}
+
+
 }

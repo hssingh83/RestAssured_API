@@ -1,133 +1,161 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="18" passed="17">
+<testng-results skipped="0" failed="0" ignored="0" total="26" passed="26">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="119979" started-at="2019-10-12T07:23:39Z" finished-at="2019-10-12T07:25:39Z">
+  <suite name="Suite" duration-ms="207760" started-at="2019-10-13T17:12:46Z" finished-at="2019-10-13T17:16:14Z">
     <groups>
     </groups>
-    <test name="Test Get voicewatch_Get_Api Feature" duration-ms="113766" started-at="2019-10-12T07:23:39Z" finished-at="2019-10-12T07:25:32Z">
-      <class name="voicewatchAPI.voicewatch_Get_API">
-        <test-method status="PASS" signature="getData()[pri:0, instance:voicewatchAPI.voicewatch_Get_API@12468a38]" name="getData" is-config="true" duration-ms="8" started-at="2019-10-12T07:23:39Z" finished-at="2019-10-12T07:23:39Z">
+    <test name="Test voicewatch_Get_Api Feature" duration-ms="114407" started-at="2019-10-13T17:12:46Z" finished-at="2019-10-13T17:14:41Z">
+      <class name="voicewatchAPI.T0001_voicewatch_Get_API">
+        <test-method status="PASS" signature="getData()[pri:0, instance:voicewatchAPI.T0001_voicewatch_Get_API@52bf72b5]" name="getData" is-config="true" duration-ms="12" started-at="2019-10-13T17:12:46Z" finished-at="2019-10-13T17:12:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getData -->
-        <test-method status="PASS" signature="vw_Get_Test_Result()[pri:1, instance:voicewatchAPI.voicewatch_Get_API@12468a38]" name="vw_Get_Test_Result" duration-ms="8312" started-at="2019-10-12T07:23:39Z" finished-at="2019-10-12T07:23:47Z">
+        <test-method status="PASS" signature="vw_Get_Test_Result()[pri:1, instance:voicewatchAPI.T0001_voicewatch_Get_API@52bf72b5]" name="vw_Get_Test_Result" duration-ms="7816" started-at="2019-10-13T17:12:46Z" finished-at="2019-10-13T17:12:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vw_Get_Test_Result -->
-        <test-method status="PASS" signature="vw_Get_vw_dashboard()[pri:2, instance:voicewatchAPI.voicewatch_Get_API@12468a38]" name="vw_Get_vw_dashboard" duration-ms="6522" started-at="2019-10-12T07:23:47Z" finished-at="2019-10-12T07:23:54Z">
+        <test-method status="PASS" signature="vw_Get_dashboard()[pri:2, instance:voicewatchAPI.T0001_voicewatch_Get_API@52bf72b5]" name="vw_Get_dashboard" duration-ms="5663" started-at="2019-10-13T17:12:54Z" finished-at="2019-10-13T17:13:00Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- vw_Get_vw_dashboard -->
-        <test-method status="PASS" signature="VW_Variable()[pri:3, instance:voicewatchAPI.voicewatch_Get_API@12468a38]" name="VW_Variable" duration-ms="6705" started-at="2019-10-12T07:23:54Z" finished-at="2019-10-12T07:24:00Z">
+        </test-method> <!-- vw_Get_dashboard -->
+        <test-method status="PASS" signature="VW_Variable()[pri:3, instance:voicewatchAPI.T0001_voicewatch_Get_API@52bf72b5]" name="VW_Variable" duration-ms="5261" started-at="2019-10-13T17:13:00Z" finished-at="2019-10-13T17:13:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VW_Variable -->
-        <test-method status="PASS" signature="VW_Tests()[pri:4, instance:voicewatchAPI.voicewatch_Get_API@12468a38]" name="VW_Tests" duration-ms="6341" started-at="2019-10-12T07:24:00Z" finished-at="2019-10-12T07:24:07Z">
+        <test-method status="PASS" signature="VW_Tests()[pri:4, instance:voicewatchAPI.T0001_voicewatch_Get_API@52bf72b5]" name="VW_Tests" duration-ms="5389" started-at="2019-10-13T17:13:05Z" finished-at="2019-10-13T17:13:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VW_Tests -->
-        <test-method status="PASS" signature="VW_scripts()[pri:6, instance:voicewatchAPI.voicewatch_Get_API@12468a38]" name="VW_scripts" duration-ms="6995" started-at="2019-10-12T07:24:07Z" finished-at="2019-10-12T07:24:14Z">
+        <test-method status="PASS" signature="VW_scripts()[pri:6, instance:voicewatchAPI.T0001_voicewatch_Get_API@52bf72b5]" name="VW_scripts" duration-ms="6975" started-at="2019-10-13T17:13:11Z" finished-at="2019-10-13T17:13:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VW_scripts -->
-        <test-method status="PASS" signature="script_summary()[pri:7, instance:voicewatchAPI.voicewatch_Get_API@12468a38]" name="script_summary" duration-ms="6528" started-at="2019-10-12T07:24:14Z" finished-at="2019-10-12T07:24:20Z">
+        <test-method status="PASS" signature="script_summary()[pri:7, instance:voicewatchAPI.T0001_voicewatch_Get_API@52bf72b5]" name="script_summary" duration-ms="5388" started-at="2019-10-13T17:13:18Z" finished-at="2019-10-13T17:13:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- script_summary -->
-        <test-method status="PASS" signature="VW_user_info()[pri:8, instance:voicewatchAPI.voicewatch_Get_API@12468a38]" name="VW_user_info" duration-ms="5717" started-at="2019-10-12T07:24:20Z" finished-at="2019-10-12T07:24:26Z">
+        <test-method status="PASS" signature="VW_user_info()[pri:8, instance:voicewatchAPI.T0001_voicewatch_Get_API@52bf72b5]" name="VW_user_info" duration-ms="6203" started-at="2019-10-13T17:13:23Z" finished-at="2019-10-13T17:13:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VW_user_info -->
-        <test-method status="PASS" signature="clients()[pri:9, instance:voicewatchAPI.voicewatch_Get_API@12468a38]" name="clients" duration-ms="7027" started-at="2019-10-12T07:24:26Z" finished-at="2019-10-12T07:24:33Z">
+        <test-method status="PASS" signature="clients()[pri:9, instance:voicewatchAPI.T0001_voicewatch_Get_API@52bf72b5]" name="clients" duration-ms="6636" started-at="2019-10-13T17:13:29Z" finished-at="2019-10-13T17:13:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clients -->
-        <test-method status="PASS" signature="parteners()[pri:10, instance:voicewatchAPI.voicewatch_Get_API@12468a38]" name="parteners" duration-ms="6301" started-at="2019-10-12T07:24:33Z" finished-at="2019-10-12T07:24:39Z">
+        <test-method status="PASS" signature="parteners()[pri:10, instance:voicewatchAPI.T0001_voicewatch_Get_API@52bf72b5]" name="parteners" duration-ms="5663" started-at="2019-10-13T17:13:36Z" finished-at="2019-10-13T17:13:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- parteners -->
-        <test-method status="PASS" signature="profiles()[pri:11, instance:voicewatchAPI.voicewatch_Get_API@12468a38]" name="profiles" duration-ms="7767" started-at="2019-10-12T07:24:39Z" finished-at="2019-10-12T07:24:47Z">
+        <test-method status="PASS" signature="profiles()[pri:11, instance:voicewatchAPI.T0001_voicewatch_Get_API@52bf72b5]" name="profiles" duration-ms="6169" started-at="2019-10-13T17:13:41Z" finished-at="2019-10-13T17:13:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- profiles -->
-        <test-method status="PASS" signature="clients_details()[pri:12, instance:voicewatchAPI.voicewatch_Get_API@12468a38]" name="clients_details" duration-ms="6692" started-at="2019-10-12T07:24:47Z" finished-at="2019-10-12T07:24:54Z">
+        <test-method status="PASS" signature="clients_details()[pri:12, instance:voicewatchAPI.T0001_voicewatch_Get_API@52bf72b5]" name="clients_details" duration-ms="5084" started-at="2019-10-13T17:13:48Z" finished-at="2019-10-13T17:13:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clients_details -->
-        <test-method status="PASS" signature="hammer_details()[pri:13, instance:voicewatchAPI.voicewatch_Get_API@12468a38]" name="hammer_details" duration-ms="6626" started-at="2019-10-12T07:24:54Z" finished-at="2019-10-12T07:25:00Z">
+        <test-method status="PASS" signature="hammer_details()[pri:13, instance:voicewatchAPI.T0001_voicewatch_Get_API@52bf72b5]" name="hammer_details" duration-ms="5324" started-at="2019-10-13T17:13:53Z" finished-at="2019-10-13T17:13:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hammer_details -->
-        <test-method status="PASS" signature="tags()[pri:14, instance:voicewatchAPI.voicewatch_Get_API@12468a38]" name="tags" duration-ms="6564" started-at="2019-10-12T07:25:00Z" finished-at="2019-10-12T07:25:07Z">
+        <test-method status="PASS" signature="tags()[pri:14, instance:voicewatchAPI.T0001_voicewatch_Get_API@52bf72b5]" name="tags" duration-ms="5472" started-at="2019-10-13T17:13:58Z" finished-at="2019-10-13T17:14:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tags -->
-        <test-method status="PASS" signature="notification()[pri:15, instance:voicewatchAPI.voicewatch_Get_API@12468a38]" name="notification" duration-ms="6756" started-at="2019-10-12T07:25:07Z" finished-at="2019-10-12T07:25:14Z">
+        <test-method status="PASS" signature="notification()[pri:15, instance:voicewatchAPI.T0001_voicewatch_Get_API@52bf72b5]" name="notification" duration-ms="5175" started-at="2019-10-13T17:14:04Z" finished-at="2019-10-13T17:14:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- notification -->
-        <test-method status="PASS" signature="hammer_labels()[pri:16, instance:voicewatchAPI.voicewatch_Get_API@12468a38]" name="hammer_labels" duration-ms="6151" started-at="2019-10-12T07:25:14Z" finished-at="2019-10-12T07:25:20Z">
+        <test-method status="PASS" signature="hammer_labels()[pri:16, instance:voicewatchAPI.T0001_voicewatch_Get_API@52bf72b5]" name="hammer_labels" duration-ms="5049" started-at="2019-10-13T17:14:09Z" finished-at="2019-10-13T17:14:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hammer_labels -->
-        <test-method status="PASS" signature="admin()[pri:17, instance:voicewatchAPI.voicewatch_Get_API@12468a38]" name="admin" duration-ms="6131" started-at="2019-10-12T07:25:20Z" finished-at="2019-10-12T07:25:26Z">
+        <test-method status="PASS" signature="admin()[pri:17, instance:voicewatchAPI.T0001_voicewatch_Get_API@52bf72b5]" name="admin" duration-ms="5385" started-at="2019-10-13T17:14:14Z" finished-at="2019-10-13T17:14:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- admin -->
-        <test-method status="PASS" signature="admin_dashboard()[pri:18, instance:voicewatchAPI.voicewatch_Get_API@12468a38]" name="admin_dashboard" duration-ms="6563" started-at="2019-10-12T07:25:26Z" finished-at="2019-10-12T07:25:32Z">
+        <test-method status="PASS" signature="hammers()[pri:20, instance:voicewatchAPI.T0001_voicewatch_Get_API@52bf72b5]" name="hammers" duration-ms="5534" started-at="2019-10-13T17:14:19Z" finished-at="2019-10-13T17:14:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- admin_dashboard -->
-      </class> <!-- voicewatchAPI.voicewatch_Get_API -->
-    </test> <!-- Test Get voicewatch_Get_Api Feature -->
-    <test name="Test Post voicewatch_Post_Api Feature" duration-ms="6185" started-at="2019-10-12T07:25:32Z" finished-at="2019-10-12T07:25:39Z">
-      <class name="voicewatchAPI.voicewatch_Post_API">
-        <test-method status="FAIL" signature="vw_post_Tag()[pri:1, instance:voicewatchAPI.voicewatch_Post_API@8f4ea7c]" name="vw_post_Tag" duration-ms="6169" started-at="2019-10-12T07:25:32Z" finished-at="2019-10-12T07:25:39Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at voicewatchAPI.voicewatch_Post_API.vw_post_Tag(voicewatch_Post_API.java:56)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- hammers -->
+        <test-method status="PASS" signature="databanks()[pri:21, instance:voicewatchAPI.T0001_voicewatch_Get_API@52bf72b5]" name="databanks" duration-ms="5129" started-at="2019-10-13T17:14:25Z" finished-at="2019-10-13T17:14:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- vw_post_Tag -->
-        <test-method status="PASS" signature="getData()[pri:0, instance:voicewatchAPI.voicewatch_Post_API@8f4ea7c]" name="getData" is-config="true" duration-ms="0" started-at="2019-10-12T07:25:32Z" finished-at="2019-10-12T07:25:32Z">
+        </test-method> <!-- databanks -->
+        <test-method status="PASS" signature="channel_groups()[pri:22, instance:voicewatchAPI.T0001_voicewatch_Get_API@52bf72b5]" name="channel_groups" duration-ms="5725" started-at="2019-10-13T17:14:30Z" finished-at="2019-10-13T17:14:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- channel_groups -->
+        <test-method status="PASS" signature="email_Temp()[pri:23, instance:voicewatchAPI.T0001_voicewatch_Get_API@52bf72b5]" name="email_Temp" duration-ms="5319" started-at="2019-10-13T17:14:36Z" finished-at="2019-10-13T17:14:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- email_Temp -->
+      </class> <!-- voicewatchAPI.T0001_voicewatch_Get_API -->
+    </test> <!-- Test voicewatch_Get_Api Feature -->
+    <test name="Test voicewatch_post_Api Feature" duration-ms="19506" started-at="2019-10-13T17:14:41Z" finished-at="2019-10-13T17:15:00Z">
+      <class name="voicewatchAPI.T0002_voicewatch_Post_API">
+        <test-method status="PASS" signature="getData()[pri:0, instance:voicewatchAPI.T0002_voicewatch_Post_API@2b662a77]" name="getData" is-config="true" duration-ms="4" started-at="2019-10-13T17:14:41Z" finished-at="2019-10-13T17:14:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getData -->
-      </class> <!-- voicewatchAPI.voicewatch_Post_API -->
-    </test> <!-- Test Post voicewatch_Post_Api Feature -->
+        <test-method status="PASS" signature="vw_Add_Tag()[pri:1, instance:voicewatchAPI.T0002_voicewatch_Post_API@2b662a77]" name="vw_Add_Tag" duration-ms="5292" started-at="2019-10-13T17:14:41Z" finished-at="2019-10-13T17:14:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vw_Add_Tag -->
+        <test-method status="PASS" signature="vw_Add_Client()[pri:2, instance:voicewatchAPI.T0002_voicewatch_Post_API@2b662a77]" name="vw_Add_Client" duration-ms="14210" started-at="2019-10-13T17:14:46Z" finished-at="2019-10-13T17:15:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vw_Add_Client -->
+      </class> <!-- voicewatchAPI.T0002_voicewatch_Post_API -->
+    </test> <!-- Test voicewatch_post_Api Feature -->
+    <test name="Test voicewatch post followed by delete feature_Api Feature" duration-ms="10298" started-at="2019-10-13T17:15:00Z" finished-at="2019-10-13T17:15:11Z">
+      <class name="voicewatchAPI.T0004_voicewatch_Post_delete_API">
+        <test-method status="PASS" signature="vw_Add_Delete_Tag()[pri:1, instance:voicewatchAPI.T0004_voicewatch_Post_delete_API@4ec4f3a0]" name="vw_Add_Delete_Tag" duration-ms="10298" started-at="2019-10-13T17:15:00Z" finished-at="2019-10-13T17:15:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vw_Add_Delete_Tag -->
+        <test-method status="PASS" signature="getData()[pri:0, instance:voicewatchAPI.T0004_voicewatch_Post_delete_API@4ec4f3a0]" name="getData" is-config="true" duration-ms="0" started-at="2019-10-13T17:15:00Z" finished-at="2019-10-13T17:15:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+      </class> <!-- voicewatchAPI.T0004_voicewatch_Post_delete_API -->
+    </test> <!-- Test voicewatch post followed by delete feature_Api Feature -->
+    <test name="Test ETE Post/Get/Delet/Get of Tag in voicewatch" duration-ms="37351" started-at="2019-10-13T17:15:11Z" finished-at="2019-10-13T17:15:48Z">
+      <class name="voicewatchAPI.T0005_voicewatch_Tag_ETE_API">
+        <test-method status="PASS" signature="validate_Tag_Feature()[pri:1, instance:voicewatchAPI.T0005_voicewatch_Tag_ETE_API@59662a0b]" name="validate_Tag_Feature" duration-ms="37351" started-at="2019-10-13T17:15:11Z" finished-at="2019-10-13T17:15:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_Tag_Feature -->
+        <test-method status="PASS" signature="Validate_Tag()[pri:0, instance:voicewatchAPI.T0005_voicewatch_Tag_ETE_API@59662a0b]" name="Validate_Tag" is-config="true" duration-ms="0" started-at="2019-10-13T17:15:11Z" finished-at="2019-10-13T17:15:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Tag -->
+      </class> <!-- voicewatchAPI.T0005_voicewatch_Tag_ETE_API -->
+    </test> <!-- Test ETE Post/Get/Delet/Get of Tag in voicewatch -->
+    <test name="Test ETE Post/Get/Delet/Get of Clients in voicewatch" duration-ms="14059" started-at="2019-10-13T17:15:48Z" finished-at="2019-10-13T17:16:02Z">
+      <class name="voicewatchAPI.T0006_voicewatch_Clinets_ETE_API">
+        <test-method status="PASS" signature="getData()[pri:0, instance:voicewatchAPI.T0006_voicewatch_Clinets_ETE_API@747ddf94]" name="getData" is-config="true" duration-ms="4" started-at="2019-10-13T17:15:48Z" finished-at="2019-10-13T17:15:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+        <test-method status="PASS" signature="validate_Clients_Feature()[pri:1, instance:voicewatchAPI.T0006_voicewatch_Clinets_ETE_API@747ddf94]" name="validate_Clients_Feature" duration-ms="14055" started-at="2019-10-13T17:15:48Z" finished-at="2019-10-13T17:16:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_Clients_Feature -->
+      </class> <!-- voicewatchAPI.T0006_voicewatch_Clinets_ETE_API -->
+    </test> <!-- Test ETE Post/Get/Delet/Get of Clients in voicewatch -->
+    <test name="Test ETE Post/Get/Delet/Get of Hammers in voicewatch" duration-ms="12002" started-at="2019-10-13T17:16:02Z" finished-at="2019-10-13T17:16:14Z">
+      <class name="voicewatchAPI.T0008_voicewatch_Hammer_ETE_API">
+        <test-method status="PASS" signature="getData()[pri:0, instance:voicewatchAPI.T0008_voicewatch_Hammer_ETE_API@130d63be]" name="getData" is-config="true" duration-ms="0" started-at="2019-10-13T17:16:02Z" finished-at="2019-10-13T17:16:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+        <test-method status="PASS" signature="validate_Clients_Feature()[pri:1, instance:voicewatchAPI.T0008_voicewatch_Hammer_ETE_API@130d63be]" name="validate_Clients_Feature" duration-ms="12002" started-at="2019-10-13T17:16:02Z" finished-at="2019-10-13T17:16:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_Clients_Feature -->
+      </class> <!-- voicewatchAPI.T0008_voicewatch_Hammer_ETE_API -->
+    </test> <!-- Test ETE Post/Get/Delet/Get of Hammers in voicewatch -->
   </suite> <!-- Suite -->
 </testng-results>

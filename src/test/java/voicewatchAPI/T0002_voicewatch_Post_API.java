@@ -24,10 +24,10 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-public class voicewatch_Post_API {
+public class T0002_voicewatch_Post_API {
 	
 
-private static Logger log =LogManager.getLogger(voicewatch_Post_API.class.getName());
+private static Logger log =LogManager.getLogger(T0002_voicewatch_Post_API.class.getName());
 
 	
 	Properties prop=new Properties();

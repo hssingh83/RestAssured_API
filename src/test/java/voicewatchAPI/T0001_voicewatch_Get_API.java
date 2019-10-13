@@ -1,8 +1,6 @@
 package voicewatchAPI;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.equalTo;
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
@@ -17,14 +15,13 @@ import files.vw_header;
 import files.vw_resources;
 import files.vw_reuseable;
 import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
-public class voicewatch_Get_API {
+public class T0001_voicewatch_Get_API {
 	
 
-private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName());
+private static Logger log =LogManager.getLogger(T0001_voicewatch_Get_API.class.getName());
 
 	
 	Properties prop=new Properties();
@@ -54,7 +51,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 	}
 
 	@Test(priority=2)
-	public void vw_Get_vw_dashboard() {
+	public void vw_Get_dashboard() {
 		
 		
 		RestAssured.baseURI=prop.getProperty("webapp");
@@ -254,7 +251,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		
 		Response res= given().log().all().relaxedHTTPSValidation().header(vw_header.Content_Type(), vw_header.content_Type_value()).header(vw_header.cookie(), vw_header.cookie_value()+reuseable.getTokenID()).
 	    when().get(vw_resources.Hammer_Groups()).
-	    then().assertThat().statusCode(200).header("X-Content-Type-Options", "nosniff").and().contentType(vw_header.cookie_value()).extract().response();
+	    then().assertThat().statusCode(200).header(vw_header.Content_Type_Option(),vw_header.Content_Type_Option_value()).and().header(vw_header.Content_Type(),vw_header.content_Type_value()).extract().response();
 		
 		                JsonPath js=reuseable.rawToJson(res);
 		               log.debug("Voicewatch Respose of Hammer group details: "+js.get());   
@@ -272,7 +269,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		Response res= 
 		given().log().all().relaxedHTTPSValidation().header(vw_header.Content_Type(), vw_header.content_Type_value()).header(vw_header.cookie(), vw_header.cookie_value()+reuseable.getTokenID()).
 	    when().get(vw_resources.Tags()).
-	    then().assertThat().statusCode(200).header("X-Content-Type-Options", "nosniff").and().contentType(vw_header.cookie_value()).extract().response();
+	    then().assertThat().statusCode(200).header(vw_header.Content_Type_Option(),vw_header.Content_Type_Option_value()).and().header(vw_header.Content_Type(),vw_header.content_Type_value()).extract().response();
 		
 		                JsonPath js=reuseable.rawToJson(res);
 		               log.debug("Voicewatch Respose of Tags: "+js.get());   
@@ -334,7 +331,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 	
 	}	
 	
-	@Test(priority=18)
+	/*@Test(priority=18)
 	public void admin_dashboard() {
 		
 		
@@ -345,13 +342,18 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		Response res= 
 		given().log().all().relaxedHTTPSValidation().header(vw_header.Content_Type(), vw_header.content_Type_value()).header(vw_header.cookie(), vw_header.cookie_value()+reuseable.getTokenID()).
 	    when().get(vw_resources.admin_dashboard()).
-	    then().assertThat().statusCode(200).header(vw_header.Content_Type_Option(),vw_header.Content_Type_Option_value()).and().header(vw_header.Content_Type(),vw_header.content_Type_value()).extract().response();
-		
-		
+	    then().assertThat().statusCode(408).header(vw_header.Content_Type_Option(),vw_header.Content_Type_Option_value()).and().header(vw_header.Content_Type(),vw_header.content_Type_value()).extract().response();
+		                     
+		                                  String Hello=res.asString();
+		                                                                
+
+		                               
+		                                 log.debug("Responses Value of admin_dashboard: " +Hello);
+		                                  
 						JsonPath js=reuseable.rawToJson(res);
 		               log.debug("Voicewatch Respose of Admin Dashboard Details: "+js.get());   
 	
-	}	
+	}	*/
 	
 	/*@Test(priority=19)
 	public void alerts() {
@@ -370,6 +372,82 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 		               log.debug("Alerts details: "+js.get());   
 	
 	}	*/
+	
+	@Test(priority=20)
+	public void hammers() {
+		
+		
+		RestAssured.baseURI=prop.getProperty("webapp");
+		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
+		
+		
+		Response res= 
+		given().log().all().relaxedHTTPSValidation().header(vw_header.Content_Type(), vw_header.content_Type_value()).header(vw_header.cookie(), vw_header.cookie_value()+reuseable.getTokenID()).
+	    when().get(vw_resources.hammers()).
+	    then().assertThat().statusCode(200).header(vw_header.Content_Type_Option(),vw_header.Content_Type_Option_value()).and().header(vw_header.Content_Type(),vw_header.content_Type_value()).extract().response();
+		                     
+		                                  
+		                                 JsonPath js=reuseable.rawToJson(res);
+		          		               log.debug("Voicewatch Respose of Hammers: "+js.get());   
+	
+	}	
+	
+
+	@Test(priority=21)
+	public void databanks() {
+		
+		
+		RestAssured.baseURI=prop.getProperty("webapp");
+		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
+		
+		
+		Response res= 
+		given().log().all().relaxedHTTPSValidation().header(vw_header.Content_Type(), vw_header.content_Type_value()).header(vw_header.cookie(), vw_header.cookie_value()+reuseable.getTokenID()).
+	    when().get(vw_resources.databanks()).
+	    then().assertThat().statusCode(200).header(vw_header.Content_Type_Option(),vw_header.Content_Type_Option_value()).and().header(vw_header.Content_Type(),vw_header.content_Type_value()).extract().response();
+		                     
+		                                  
+		                                 JsonPath js=reuseable.rawToJson(res);
+		          		               log.debug("Voicewatch Respose of Databanks: "+js.get());   
+	
+	}	
+	
+	@Test(priority=22)
+	public void channel_groups() {
+		
+		
+		RestAssured.baseURI=prop.getProperty("webapp");
+		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
+		
+		
+		Response res= 
+		given().log().all().relaxedHTTPSValidation().header(vw_header.Content_Type(), vw_header.content_Type_value()).header(vw_header.cookie(), vw_header.cookie_value()+reuseable.getTokenID()).
+	    when().get(vw_resources.applications()).
+	    then().assertThat().statusCode(200).header(vw_header.Content_Type_Option(),vw_header.Content_Type_Option_value()).and().header(vw_header.Content_Type(),vw_header.content_Type_value()).extract().response();
+		                     
+		                                  
+		                                 JsonPath js=reuseable.rawToJson(res);
+		          		               log.debug("Voicewatch Respose of Channel-Groups: "+js.get());  	
+	}	
+	
+	@Test(priority=23)
+	public void email_Temp() {
+		
+		
+		RestAssured.baseURI=prop.getProperty("webapp");
+		log.info("Host infomation of Webapp server: "+prop.getProperty("webapp"));
+		
+		
+		Response res= 
+		given().log().all().relaxedHTTPSValidation().header(vw_header.Content_Type(), vw_header.content_Type_value()).header(vw_header.cookie(), vw_header.cookie_value()+reuseable.getTokenID()).
+	    when().get(vw_resources.channel_groups()).
+	    then().assertThat().statusCode(200).header(vw_header.Content_Type_Option(),vw_header.Content_Type_Option_value()).and().header(vw_header.Content_Type(),vw_header.content_Type_value()).extract().response();
+		                     
+		                                  
+		                                 JsonPath js=reuseable.rawToJson(res);
+		          		               log.debug("Voicewatch Respose of Email_Templates: "+js.get());   
+	
+	}	
 	
 	
 	

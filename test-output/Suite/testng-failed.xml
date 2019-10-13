@@ -10,7 +10,7 @@
       <class name="voicewatchAPI.voicewatch_Get_API">
         <methods>
           <include name="getData"/>
-          <include name="VW_Test_Execute"/>
+          <include name="admin_dashboard"/>
         </methods>
       </class> <!-- voicewatchAPI.voicewatch_Get_API -->
     </classes>

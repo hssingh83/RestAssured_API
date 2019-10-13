@@ -8,24 +8,55 @@
 </listeners>
 
      
-     <test  name="Test Get voicewatch_Get_Api Feature">
+     <test  name="Test voicewatch_Get_Api Feature">
     <classes>
      
-      <class name="voicewatchAPI.voicewatch_Get_API"/>
+      <class name="voicewatchAPI.T0001_voicewatch_Get_API"/>
       
      </classes> 
      </test>
      
-      <test  name="Test ETE ()Post/Get/Delet/Get of Tag in voicewatch">
+      <test  name="Test voicewatch_post_Api Feature">
     <classes>
      
-      <class name="voicewatchAPI.voicewatch_Tag_ETE_API"/>
+      <class name="voicewatchAPI.T0002_voicewatch_Post_API"/>
       
      </classes> 
      </test>
      
-         
-  
+      <test  name="Test voicewatch post followed by delete feature_Api Feature">
+    <classes>
+     
+      <class name="voicewatchAPI.T0004_voicewatch_Post_delete_API"/>
+      
+     </classes> 
+     </test>
+     
+      <test  name="Test ETE Post/Get/Delet/Get of Tag in voicewatch">
+    <classes>
+     
+      <class name="voicewatchAPI.T0005_voicewatch_Tag_ETE_API"/>
+      
+     </classes> 
+     </test>
+     
+         <test  name="Test ETE Post/Get/Delet/Get of Clients in voicewatch">
+    <classes>
+     
+      <class name="voicewatchAPI.T0006_voicewatch_Clinets_ETE_API"/>
+      
+     </classes> 
+     </test>
+     
+       <test  name="Test ETE Post/Get/Delet/Get of Hammers in voicewatch">
+    <classes>
+     
+      <class name="voicewatchAPI.T0008_voicewatch_Hammer_ETE_API"/>
+      
+     </classes> 
+     </test>
+   
+     
      
      
 </suite> <!-- Suite -->

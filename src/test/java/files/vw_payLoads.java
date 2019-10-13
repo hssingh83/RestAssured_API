@@ -19,7 +19,17 @@ public class vw_payLoads {
 			
 	}
 	
-
+	public static String Partner(String PartnerName)
+	{
+		String pay="{{\\r\\n    \\r\\n    \\\"name\\\": \\\""+PartnerName+"\\\",\\r\\n    \\\"description\\\": null,\\r\\n    \\\"subscription_start_date\\\": 1553169600,\\r\\n    \\\"subscription_end_date\\\": 1553248800,\\r\\n    \\\"max_tests_allowed\\\": 1,\\r\\n    \\\"max_qa_tests\\\": 1,\\r\\n    \\\"max_load_tests\\\": 1,\\r\\n    \\\"max_vw_channels\\\": 0,\\r\\n    \\\"max_qa_channels\\\": 10,\\r\\n    \\\"max_load_channels\\\": 50,\\r\\n    \\\"min_test_schedule_period_in_minutes\\\": 15,\\r\\n    \\\"client_apps\\\": [\\r\\n        \\\"VoiceWatch\\\",\\r\\n        \\\"ART\\\",\\r\\n        \\\"HammerOnCall\\\"\\r\\n    ],\\r\\n    \\\"allow_go_script\\\": true,\\r\\n    \\\"allow_upload_script\\\": true,\\r\\n    \\\"allow_testcase_import\\\": false,\\r\\n    \\\"allow_non_toll_free\\\": false,\\r\\n    \\\"allow_qa_non_toll_free\\\": false,\\r\\n    \\\"allow_load_non_toll_free\\\": false,\\r\\n    \\\"max_non_toll_free\\\": 0,\\r\\n    \\\"max_qa_non_toll_free\\\": 0,\\r\\n    \\\"max_load_non_toll_free\\\": 0,\\r\\n    \\\"allow_csv_transformer\\\": false,\\r\\n    \\\"default_hammer_group_id\\\": 1,\\r\\n    \\\"hammer_labels\\\": {}\\r\\n}}";
+		return pay;
+		
+			
+	}
+	
+	
+	
+	
 	public static String getPostData04_2()
 	{
 		String b="{"+

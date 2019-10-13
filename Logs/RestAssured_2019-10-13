@@ -1,17 +1,7 @@
-[INFO ] 2019-10-13 00:45:38,431 voicewatch_Tag_END_API.vw_Add_Tag() - Host infomation Webapp server: https://os-2k16-vm332.empirix.com
-[INFO ] 2019-10-13 00:45:39,056 voicewatch_Get_API.getTokenID() - Host infomation OpenAM server:https://os-2k16-vm333.empirix.com
-[INFO ] 2019-10-13 00:45:41,983 voicewatch_Get_API.getTokenID() - Auth-Respose: {"tokenId":"AQIC5wM2LY4SfczChxK0ec-Pe1CHgPhUkT97VcwCSc50pC4.*AAJTSQACMDEAAlNLABQtOTAwNzkzNTg1NTIwNTAzMjk5MQ..*","successUrl":"/openam/console"}
-[DEBUG] 2019-10-13 00:45:46,097 voicewatch_Tag_END_API.vw_Add_Tag() - Added New Tag ID: 98
-[DEBUG] 2019-10-13 00:45:46,118 voicewatch_Tag_END_API.vw_Add_Tag() - Tag ID info: 98
-[INFO ] 2019-10-13 00:45:46,134 voicewatch_Get_API.getTokenID() - Host infomation OpenAM server:https://os-2k16-vm333.empirix.com
-[INFO ] 2019-10-13 00:45:48,319 voicewatch_Get_API.getTokenID() - Auth-Respose: {"tokenId":"AQIC5wM2LY4SfcwH5lxMGEHr_FBeZCJpqnB8sfiNkf-kIDA.*AAJTSQACMDEAAlNLABQtOTEwNDAwNjg3NDMzNjQ1MjY3Mg..*","successUrl":"/openam/console"}
-[DEBUG] 2019-10-13 00:45:51,744 voicewatch_Tag_END_API.vw_Add_Tag() - Get repose of Generated Tag ID of Voicewatch: 98
-[DEBUG] 2019-10-13 00:45:51,766 voicewatch_Tag_END_API.vw_Add_Tag() - Tag ID info: 98
-[DEBUG] 2019-10-13 00:45:51,770 voicewatch_Tag_END_API.vw_Add_Tag() - Post Tag ID: 98 and Get Tag ID: 98 is equal,So Test Case Pass successfully
-[INFO ] 2019-10-13 00:45:51,770 voicewatch_Get_API.getTokenID() - Host infomation OpenAM server:https://os-2k16-vm333.empirix.com
-[INFO ] 2019-10-13 00:45:53,932 voicewatch_Get_API.getTokenID() - Auth-Respose: {"tokenId":"AQIC5wM2LY4SfcyID_xihK9hsctULALWICiqeajvKoeHYmk.*AAJTSQACMDEAAlNLABQtMzQxOTI3OTM4NzcyMzk5NjkwNQ..*","successUrl":"/openam/console"}
-[DEBUG] 2019-10-13 00:45:57,217 voicewatch_Tag_END_API.vw_Add_Tag() - Delete Tag id is: {id=Not Found}
-[INFO ] 2019-10-13 00:45:57,223 voicewatch_Get_API.getTokenID() - Host infomation OpenAM server:https://os-2k16-vm333.empirix.com
-[INFO ] 2019-10-13 00:45:59,640 voicewatch_Get_API.getTokenID() - Auth-Respose: {"tokenId":"AQIC5wM2LY4Sfcyl0zTuhtQoHty-345J1FFy5dEFMc3TDZI.*AAJTSQACMDEAAlNLABQtNzkzMzUzMTgyMjYwMzI0NjM5NQ..*","successUrl":"/openam/console"}
-[INFO ] 2019-10-13 00:46:18,024 voicewatch_Tag_END_API.vw_Add_Tag() - Again Get response is: null
-[DEBUG] 2019-10-13 00:46:18,024 voicewatch_Tag_END_API.vw_Add_Tag() - Created tag id still avaiable
+[INFO ] 2019-10-13 22:42:17,830 T0001_voicewatch_Get_API.vw_Get_Test_Result() - Host infomation of Webapp server: https://os-2k16-vm332.empirix.com
+[INFO ] 2019-10-13 22:42:18,443 T0001_voicewatch_Get_API.getTokenID() - Host infomation OpenAM server:https://os-2k16-vm333.empirix.com
+[INFO ] 2019-10-13 22:42:21,227 T0001_voicewatch_Get_API.getTokenID() - Auth-Respose: {"tokenId":"AQIC5wM2LY4SfcxMkHCqo6EoPoFZXlMsSKmz66P_xwe-EBU.*AAJTSQACMDEAAlNLABM1NDQyODU5Njk5OTA2MjczNTYw*","successUrl":"/openam/console"}
+[DEBUG] 2019-10-13 22:42:25,213 T0001_voicewatch_Get_API.vw_Get_Test_Result() - final result of Tet Result is: {test_results=[], retrieval_timestamp=1570986508}
+[INFO ] 2019-10-13 22:42:25,227 T0001_voicewatch_Get_API.vw_Get_dashboard() - Host infomation of Webapp server: https://os-2k16-vm332.empirix.com
+[INFO ] 2019-10-13 22:42:25,235 T0001_voicewatch_Get_API.getTokenID() - Host infomation OpenAM server:https://os-2k16-vm333.empirix.com
+[INFO ] 2019-10-13 22:42:27,229 T0001_voicewatch_Get_API.getTokenID() - Auth-Respose: {"tokenId":"AQIC5wM2LY4SfcyXR-AIMM3xkcHUclmaV4jihn6-thcNC38.*AAJTSQACMDEAAlNLABMtNzU4NzI4NTA2MTk1MDM0Mzkw*","successUrl":"/openam/console"}

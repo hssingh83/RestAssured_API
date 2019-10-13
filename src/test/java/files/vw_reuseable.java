@@ -10,18 +10,16 @@ import java.util.Random;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
-
 import io.restassured.RestAssured;
-import io.restassured.path.json.JsonPath;
+
 import io.restassured.path.xml.XmlPath;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import voicewatchAPI.voicewatch_Get_API;
+import voicewatchAPI.T0001_voicewatch_Get_API;
 
 public class vw_reuseable {
 	
-private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName());
+private static Logger log =LogManager.getLogger(T0001_voicewatch_Get_API.class.getName());
 
 	
 	
@@ -122,6 +120,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Get_API.class.getName
 	{ 
 		String respon=r.asString();
 		JsonPath x=new JsonPath(respon);
+	//	JsonPath x=new JsonPath(respon);
 		return x;
 	}
 	

@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="47357" started-at="2019-10-12T19:16:47Z" finished-at="2019-10-12T19:17:34Z">
+  <suite name="Default suite" duration-ms="14524" started-at="2019-10-13T16:38:24Z" finished-at="2019-10-13T16:38:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="47357" started-at="2019-10-12T19:16:47Z" finished-at="2019-10-12T19:17:34Z">
-      <class name="voicewatchAPI.voicewatch_Tag_END_API">
-        <test-method status="PASS" signature="getData()[pri:0, instance:voicewatchAPI.voicewatch_Tag_END_API@6b2ea799]" name="getData" is-config="true" duration-ms="8" started-at="2019-10-12T19:16:47Z" finished-at="2019-10-12T19:16:47Z">
+    <test name="Default test" duration-ms="14524" started-at="2019-10-13T16:38:24Z" finished-at="2019-10-13T16:38:38Z">
+      <class name="voicewatchAPI.T0004_voicewatch_Post_delete_API">
+        <test-method status="PASS" signature="getData()[pri:0, instance:voicewatchAPI.T0004_voicewatch_Post_delete_API@6b2ea799]" name="getData" is-config="true" duration-ms="12" started-at="2019-10-13T16:38:24Z" finished-at="2019-10-13T16:38:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getData -->
-        <test-method status="PASS" signature="vw_Add_Tag()[pri:1, instance:voicewatchAPI.voicewatch_Tag_END_API@6b2ea799]" name="vw_Add_Tag" duration-ms="47328" started-at="2019-10-12T19:16:47Z" finished-at="2019-10-12T19:17:34Z">
+        <test-method status="PASS" signature="vw_Add_Delete_Tag()[pri:1, instance:voicewatchAPI.T0004_voicewatch_Post_delete_API@6b2ea799]" name="vw_Add_Delete_Tag" duration-ms="14496" started-at="2019-10-13T16:38:24Z" finished-at="2019-10-13T16:38:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- vw_Add_Tag -->
-      </class> <!-- voicewatchAPI.voicewatch_Tag_END_API -->
+        </test-method> <!-- vw_Add_Delete_Tag -->
+      </class> <!-- voicewatchAPI.T0004_voicewatch_Post_delete_API -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

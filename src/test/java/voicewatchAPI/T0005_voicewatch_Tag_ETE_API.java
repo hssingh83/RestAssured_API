@@ -24,15 +24,15 @@ import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
-public class voicewatch_Tag_ETE_API {
+public class T0005_voicewatch_Tag_ETE_API {
 	
 
-private static Logger log =LogManager.getLogger(voicewatch_Tag_ETE_API.class.getName());
+private static Logger log =LogManager.getLogger(T0005_voicewatch_Tag_ETE_API.class.getName());
 
 	
 	Properties prop=new Properties();
 	@BeforeTest
-	public void getData() throws IOException {
+	public void Validate_Tag() throws IOException {
 		
 		FileInputStream fis=new FileInputStream("C:\\Users\\hsingh\\Frameworks\\RestAssured_API\\src\\test\\java\\files\\data.properties");
 		prop.load(fis);
@@ -40,7 +40,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Tag_ETE_API.class.get
 	}
 	
 	@Test(priority=1)
-	public void vw_Add_Tag() {
+	public void validate_Tag_Feature() {
 		
 		RestAssured.baseURI=prop.getProperty("webapp");
 		log.info("Host infomation Webapp server: "+prop.getProperty("webapp"));
@@ -50,7 +50,7 @@ private static Logger log =LogManager.getLogger(voicewatch_Tag_ETE_API.class.get
 	Response res= given().log().all().relaxedHTTPSValidation().header(vw_header.Content_Type(), vw_header.content_Type_value()).header(vw_header.cookie(), vw_header.cookie_value()+reuseable.getTokenID()).
 	body(vw_payLoads.tag(vw_reuseable.getSaltString())).
 	when().post(vw_resources.Tags()).
-	then().assertThat().statusCode(200).extract().response();
+	then().assertThat().statusCode(200).and().header(vw_header.Content_Type_Option(),vw_header.Content_Type_Option_value()).and().header(vw_header.Content_Type(),vw_header.content_Type_value()).extract().response();
 		            
 
 	                JsonPath js_post=reuseable.rawToJson(res);

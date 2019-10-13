@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test Get voicewatch_Get_Api Feature</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>17/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>16/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Oct 12 13:12:03 IST 2019</td>
+<td>Started on:</td><td>Sun Oct 13 16:26:42 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>110 seconds (110129 ms)</td>
+<tr><td>Total time:</td><td>142 seconds (142167 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,31 +75,71 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='voicewatchAPI.voicewatch_Get_API.VW_Test_Execute()'><b>VW_Test_Execute</b><br>Test class: voicewatchAPI.voicewatch_Get_API</td>
-<td><div><pre>io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
-	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
-	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
-	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
-	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
-	at io.restassured.path.json.JsonPath.get(JsonPath.java:190)
-	at voicewatchAPI.voicewatch_Get_API.VW_Test_Execute(voicewatch_Get_API.java:117)
-Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
-	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
-	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
-	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
-	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
-	... 30 more
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace211096367", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace211096367'><pre>io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
-	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
-	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
-	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
-	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
-	at io.restassured.path.json.JsonPath.get(JsonPath.java:190)
-	at voicewatchAPI.voicewatch_Get_API.VW_Test_Execute(voicewatch_Get_API.java:117)
+<td title='voicewatchAPI.voicewatch_Get_API.admin_dashboard()'><b>admin_dashboard</b><br>Test class: voicewatchAPI.voicewatch_Get_API</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;408&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:237)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:249)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:671)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:190)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at voicewatchAPI.voicewatch_Get_API.admin_dashboard(voicewatch_Get_API.java:348)
+... Removed 38 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace860941277", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace860941277'><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;408&gt;.
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:237)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:249)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:671)
+	at sun.reflect.GeneratedMethodAccessor69.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:190)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at sun.reflect.GeneratedMethodAccessor162.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at voicewatchAPI.voicewatch_Get_API.admin_dashboard(voicewatch_Get_API.java:348)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -125,18 +165,9 @@ Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
-	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
-	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
-	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
-	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
-	... 30 more
 </pre></div></td>
-<td>4</td>
-<td>voicewatchAPI.voicewatch_Get_API@3d4818e8</td></tr>
+<td>38</td>
+<td>voicewatchAPI.voicewatch_Get_API@28701274</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -148,88 +179,83 @@ Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while
 <tr>
 <td title='voicewatchAPI.voicewatch_Get_API.VW_Tests()'><b>VW_Tests</b><br>Test class: voicewatchAPI.voicewatch_Get_API</td>
 <td></td>
-<td>4</td>
-<td>voicewatchAPI.voicewatch_Get_API@3d4818e8</td></tr>
+<td>6</td>
+<td>voicewatchAPI.voicewatch_Get_API@28701274</td></tr>
 <tr>
 <td title='voicewatchAPI.voicewatch_Get_API.VW_Variable()'><b>VW_Variable</b><br>Test class: voicewatchAPI.voicewatch_Get_API</td>
 <td></td>
 <td>5</td>
-<td>voicewatchAPI.voicewatch_Get_API@3d4818e8</td></tr>
+<td>voicewatchAPI.voicewatch_Get_API@28701274</td></tr>
 <tr>
 <td title='voicewatchAPI.voicewatch_Get_API.VW_scripts()'><b>VW_scripts</b><br>Test class: voicewatchAPI.voicewatch_Get_API</td>
 <td></td>
 <td>6</td>
-<td>voicewatchAPI.voicewatch_Get_API@3d4818e8</td></tr>
+<td>voicewatchAPI.voicewatch_Get_API@28701274</td></tr>
 <tr>
 <td title='voicewatchAPI.voicewatch_Get_API.VW_user_info()'><b>VW_user_info</b><br>Test class: voicewatchAPI.voicewatch_Get_API</td>
 <td></td>
 <td>6</td>
-<td>voicewatchAPI.voicewatch_Get_API@3d4818e8</td></tr>
+<td>voicewatchAPI.voicewatch_Get_API@28701274</td></tr>
 <tr>
 <td title='voicewatchAPI.voicewatch_Get_API.admin()'><b>admin</b><br>Test class: voicewatchAPI.voicewatch_Get_API</td>
 <td></td>
 <td>5</td>
-<td>voicewatchAPI.voicewatch_Get_API@3d4818e8</td></tr>
-<tr>
-<td title='voicewatchAPI.voicewatch_Get_API.admin_dashboard()'><b>admin_dashboard</b><br>Test class: voicewatchAPI.voicewatch_Get_API</td>
-<td></td>
-<td>6</td>
-<td>voicewatchAPI.voicewatch_Get_API@3d4818e8</td></tr>
+<td>voicewatchAPI.voicewatch_Get_API@28701274</td></tr>
 <tr>
 <td title='voicewatchAPI.voicewatch_Get_API.clients()'><b>clients</b><br>Test class: voicewatchAPI.voicewatch_Get_API</td>
 <td></td>
-<td>5</td>
-<td>voicewatchAPI.voicewatch_Get_API@3d4818e8</td></tr>
+<td>7</td>
+<td>voicewatchAPI.voicewatch_Get_API@28701274</td></tr>
 <tr>
 <td title='voicewatchAPI.voicewatch_Get_API.clients_details()'><b>clients_details</b><br>Test class: voicewatchAPI.voicewatch_Get_API</td>
 <td></td>
-<td>7</td>
-<td>voicewatchAPI.voicewatch_Get_API@3d4818e8</td></tr>
+<td>5</td>
+<td>voicewatchAPI.voicewatch_Get_API@28701274</td></tr>
 <tr>
 <td title='voicewatchAPI.voicewatch_Get_API.hammer_details()'><b>hammer_details</b><br>Test class: voicewatchAPI.voicewatch_Get_API</td>
 <td></td>
 <td>6</td>
-<td>voicewatchAPI.voicewatch_Get_API@3d4818e8</td></tr>
+<td>voicewatchAPI.voicewatch_Get_API@28701274</td></tr>
 <tr>
 <td title='voicewatchAPI.voicewatch_Get_API.hammer_labels()'><b>hammer_labels</b><br>Test class: voicewatchAPI.voicewatch_Get_API</td>
 <td></td>
-<td>6</td>
-<td>voicewatchAPI.voicewatch_Get_API@3d4818e8</td></tr>
+<td>8</td>
+<td>voicewatchAPI.voicewatch_Get_API@28701274</td></tr>
 <tr>
 <td title='voicewatchAPI.voicewatch_Get_API.notification()'><b>notification</b><br>Test class: voicewatchAPI.voicewatch_Get_API</td>
 <td></td>
-<td>5</td>
-<td>voicewatchAPI.voicewatch_Get_API@3d4818e8</td></tr>
+<td>6</td>
+<td>voicewatchAPI.voicewatch_Get_API@28701274</td></tr>
 <tr>
 <td title='voicewatchAPI.voicewatch_Get_API.parteners()'><b>parteners</b><br>Test class: voicewatchAPI.voicewatch_Get_API</td>
 <td></td>
-<td>5</td>
-<td>voicewatchAPI.voicewatch_Get_API@3d4818e8</td></tr>
+<td>6</td>
+<td>voicewatchAPI.voicewatch_Get_API@28701274</td></tr>
 <tr>
 <td title='voicewatchAPI.voicewatch_Get_API.profiles()'><b>profiles</b><br>Test class: voicewatchAPI.voicewatch_Get_API</td>
 <td></td>
 <td>7</td>
-<td>voicewatchAPI.voicewatch_Get_API@3d4818e8</td></tr>
+<td>voicewatchAPI.voicewatch_Get_API@28701274</td></tr>
 <tr>
 <td title='voicewatchAPI.voicewatch_Get_API.script_summary()'><b>script_summary</b><br>Test class: voicewatchAPI.voicewatch_Get_API</td>
 <td></td>
-<td>6</td>
-<td>voicewatchAPI.voicewatch_Get_API@3d4818e8</td></tr>
+<td>7</td>
+<td>voicewatchAPI.voicewatch_Get_API@28701274</td></tr>
 <tr>
 <td title='voicewatchAPI.voicewatch_Get_API.tags()'><b>tags</b><br>Test class: voicewatchAPI.voicewatch_Get_API</td>
 <td></td>
-<td>5</td>
-<td>voicewatchAPI.voicewatch_Get_API@3d4818e8</td></tr>
+<td>6</td>
+<td>voicewatchAPI.voicewatch_Get_API@28701274</td></tr>
 <tr>
 <td title='voicewatchAPI.voicewatch_Get_API.vw_Get_Test_Result()'><b>vw_Get_Test_Result</b><br>Test class: voicewatchAPI.voicewatch_Get_API</td>
 <td></td>
-<td>8</td>
-<td>voicewatchAPI.voicewatch_Get_API@3d4818e8</td></tr>
+<td>7</td>
+<td>voicewatchAPI.voicewatch_Get_API@28701274</td></tr>
 <tr>
-<td title='voicewatchAPI.voicewatch_Get_API.vw_Get_vw_dashboard()'><b>vw_Get_vw_dashboard</b><br>Test class: voicewatchAPI.voicewatch_Get_API</td>
+<td title='voicewatchAPI.voicewatch_Get_API.vw_Get_dashboard()'><b>vw_Get_dashboard</b><br>Test class: voicewatchAPI.voicewatch_Get_API</td>
 <td></td>
 <td>5</td>
-<td>voicewatchAPI.voicewatch_Get_API@3d4818e8</td></tr>
+<td>voicewatchAPI.voicewatch_Get_API@28701274</td></tr>
 </table><p>
 </body>
 </html>
